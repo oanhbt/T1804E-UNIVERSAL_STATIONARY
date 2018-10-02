@@ -31,7 +31,7 @@
 	                </a>
 	        <div class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav m-auto">
-	                <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+	                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
 	                <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">PRODUCT</a>
 	                    <ul class="dropdown-menu megamenu">
 	                        <li class="dropdown-item">
@@ -186,10 +186,10 @@
 		                
 		            </li>
 		            <li class="nav-item">
-				    	<a class="nav-link" href="#">CONTACT</a>
+				    	<a class="nav-link" href="contact.html">CONTACT</a>
 				    </li>
 				    <li class="nav-item">
-				    	<a class="nav-link" href="#">ABOUT US</a>
+				    	<a class="nav-link" href="about-us.html">ABOUT US</a>
 				    </li>
 	            </ul>
 	            <button class="btn btn-light btn-search" data-toggle="modal" data-target="#myModal">
@@ -219,10 +219,66 @@
   </div>
   <!-- Contact us -->
 	<div class="mt-6">
-		<div>
-			<h2>Contact us</h2>
-		</div>
+		<div class="mt-6">
+  		<div class="container">
+  			<div class="col-md-6">
+  				<h2>Contact us</h2>
+  				<p>FPT Stationary</p>
+  				<p>No 8 Tôn Thất Thuyết - Hà Nội</p>
+  				<p>Tel: 0123456788</p>
+  				<p>Fax: 0123456789</p>
+  			</div>
+  			<div class="col-md-6">
+  				<div id="map"">
+  			</div>
+  		</div>
+  		<div class="container mt-6">
+  <h3>Have your say</h3>
+  
+  <form action="/action_page.php">
+  	<div class="form-group col-md-6">
+    	<label for="usr">Name:</label>
+	  <input type="text" class="form-control">
+	  <label for="usr">Email:</label>
+	  <input type="email
+	  " class="form-control">
+	  <label for="usr">Your Company name:</label>
+	  <input type="text" class="form-control">
+	  <label for="comment">Comment:</label>
+  	<textarea class="form-control" rows="5" id="comment"></textarea>
+
+<button type="button" class="btn btn-primary">Submit</button>
+	</div>
+
+  </form>
+</div>
+  </div>
 		
+<<<<<<< HEAD
+=======
+		<!-- Map -->
+			<div id="map" onload="initMap()" style="width:580px; height:400px;"></div>
+		    <script>
+
+		      function initMap() {
+		        var myLatLng = {lat: 21.028877, lng: 105.78187};
+
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 16,
+		          center: myLatLng
+		        });
+
+		        var marker = new google.maps.Marker({
+		          position: myLatLng,
+		          map: map,
+		          title: 'Hello World!'
+		        });
+		      }
+		    </script>
+		   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkparMoAvFuZYPgGjrY-TutctVUL3HneI&callback=initMap"
+    		async defer></script>
+		<!-- Map -->
+>>>>>>> ab6eba358e4d7431d916849994c21f49df90b64e
 	</div>
 	<!-- //Contact us -->
 
