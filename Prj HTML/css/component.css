@@ -98,3 +98,7 @@ a.gplus:hover{
   	color: #fff;
   	text-align: center;
 }
+.card a img{
+	width: 300px;
+	height: 150px;
+}
