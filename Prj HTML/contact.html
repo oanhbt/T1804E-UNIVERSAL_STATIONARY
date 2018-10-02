@@ -221,7 +221,26 @@
 	<div class="mt-6">
 		
 		<!-- Map -->
-			<div></div>
+			<div id="map" onload="initMap()" style="width:580px; height:400px;"></div>
+		    <script>
+
+		      function initMap() {
+		        var myLatLng = {lat: 21.0283918, lng: 105.7819113};
+
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 5,
+		          center: myLatLng
+		        });
+
+		        var marker = new google.maps.Marker({
+		          position: myLatLng,
+		          map: map,
+		          title: 'Hello World!'
+		        });
+		      }
+		    </script>
+		   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkparMoAvFuZYPgGjrY-TutctVUL3HneI&callback=initMap"
+    		async defer></script>
 		<!-- Map -->
 	</div>
 	<!-- //Contact us -->
