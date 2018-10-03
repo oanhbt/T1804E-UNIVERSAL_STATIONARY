@@ -63,10 +63,27 @@ a.twitter:before{
 a.gplus:before{
 	content: '\f0d5';
 }
+.icon-search:before{
+	font-family: FontAwesome;
+	content: '\f002';
+    transition: transform .2s;
+}
+.icon-search-scroll{
+	color: #FFFFFFFF;
+}
 .shopping-cart:before{
 	font-family: FontAwesome;
 	content: '\f290';
 }
+.icon-like:before{
+	font-family: FontAwesome;
+	content: '\f004';
+}
+.icon-compare:before{
+	font-family: FontAwesome;
+	content: '\f012';
+}
+
 
 /* hover over the icons now to see the tooltips! */
 a.facebook:hover{
@@ -84,10 +101,21 @@ a.gplus:hover{
 	color: #fff;
 	text-decoration: none;
 }
-.shopping-cart:hover:before{
-	font-family: FontAwesome;
-	content: '\f07a';
+.icon-search:hover{
+	color: #000000FF;
+	text-decoration: none;
+	-ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); 
 }
+.icon-search-scroll:hover{
+	color: #FFFFFFFF;
+	text-decoration: none;
+	-ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); 
+}
+
 #follow_us{
 	font-size: 16px;
 }
@@ -114,6 +142,24 @@ a.gplus:hover{
 }
 .star-rating .fa-star{color: yellow;}
 
-.owl-item:hover{
-	color: red;
+.add-cart{
+	font-size: 14px !important;
+}
+.card-footer a.icon-like,
+.card-footer a.icon-compare, 
+.quickview a{
+	opacity: 0;
+}
+
+div .owl-item:hover img{
+	opacity: 0.5;
+}
+div .owl-item:hover a{
+	opacity: 1;
+	transition: 1s;
+}
+.quickview{
+	position: absolute;
+	top: 0;
+	right: 0;
 }

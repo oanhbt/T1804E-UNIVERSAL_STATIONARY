@@ -161,7 +161,6 @@ sup {
 }
 
 a {
-  color: #007bff;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -4526,7 +4525,6 @@ tbody.collapse.show {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1.25rem;
 }
 
 .card-img {
@@ -8892,14 +8890,15 @@ a.text-danger:hover, a.text-danger:focus {
 .text-light {
   color: #f8f9fa !important;
 }
+.text-dark {
+  color: #343a40 !important;
+}
 
 a.text-light:hover, a.text-light:focus {
   color: #dae0e5 !important;
 }
 
-.text-dark {
-  color: #343a40 !important;
-}
+
 
 a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important;
