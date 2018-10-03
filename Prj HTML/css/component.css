@@ -150,11 +150,6 @@ a.gplus:hover{
 }
 /*img-supplier*/
 
-
-.add-cart{
-	font-size: 14px !important;
-}
-
 /*card-product*/
 .card-footer a.icon-like,
 .card-footer a.icon-compare, 
@@ -166,7 +161,7 @@ div .owl-item:hover img{
 }
 div .owl-item:hover a{
 	opacity: 1;
-	transition: 1s;
+	transition: 0.5s;
 }
 .quickview{
 	position: absolute;
