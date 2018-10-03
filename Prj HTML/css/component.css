@@ -18,6 +18,8 @@ h3{
 .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 0.5) !important;
 }
+
+/*footer*/
 .footer .footer_tittle{
 	color: #FFF;
 }
@@ -33,6 +35,9 @@ h3{
 .footer_content ul li a{
 	line-height: 2.5 !important;
 }
+/*footer*/
+
+/*icon-page*/
 .icon-social a{
 	background: #D2D7D3;
 	color: #222;
@@ -84,8 +89,6 @@ a.gplus:before{
 	content: '\f012';
 }
 
-
-/* hover over the icons now to see the tooltips! */
 a.facebook:hover{
 	background-color: #4183d7;
 	color: #fff;
@@ -115,11 +118,14 @@ a.gplus:hover{
     -webkit-transform: scale(1.5);
     transform: scale(1.5); 
 }
+/*icon-page*/
+
 
 #follow_us{
 	font-size: 16px;
 }
 
+/*carosel*/
 .carousel-inner .carousel-item img{
 	width: 100%;
 	height: 550px;
@@ -135,22 +141,26 @@ a.gplus:hover{
   	color: #fff;
   	text-align: center;
 }
+/*carosel*/
 
-.star-rating {
-  line-height:32px;
-  font-size:1.25em;
+/*img-supplier*/
+.dropdown-item .card a img{
+	width: 300px;
+	height: 150px;
 }
-.star-rating .fa-star{color: yellow;}
+/*img-supplier*/
+
 
 .add-cart{
 	font-size: 14px !important;
 }
+
+/*card-product*/
 .card-footer a.icon-like,
 .card-footer a.icon-compare, 
 .quickview a{
 	opacity: 0;
 }
-
 div .owl-item:hover img{
 	opacity: 0.5;
 }
@@ -163,3 +173,4 @@ div .owl-item:hover a{
 	top: 0;
 	right: 0;
 }
+/*card-product*/
