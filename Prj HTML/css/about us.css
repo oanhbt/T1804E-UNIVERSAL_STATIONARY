@@ -1,6 +1,9 @@
-h1{text-align: center;
-	
+#img1{
+	width: 5px;
+
 }
-img{
-	
+#ct1 {
+	text-align: center;
+	background: #6666;
+	padding: 20px
 }
