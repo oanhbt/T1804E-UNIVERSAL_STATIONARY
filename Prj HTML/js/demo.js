@@ -1,7 +1,5 @@
-jQuery(document).ready(function(){
-    $(".dropdown").hover(
-        function() { $('.dropdown-menu', this).fadeIn("fast");
-        },
-        function() { $('.dropdown-menu', this).fadeOut("fast");
-    });
+$(document).ready(function() {
+	$(".icon-sort-up").click(function(){
+		$(this).toggleClass('icon-sort-up');
+	});
 });
