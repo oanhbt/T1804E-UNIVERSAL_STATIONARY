@@ -393,17 +393,31 @@
 				</div>
 			</div>
 			<div class="row">
-				<form class="form-inline">
-					<div class="input-group">
-					<label>Sort By</label>
-					  <select name="sort-by" class="custom-select ml-3">
-					    <option value="position" selected>Position</option>
-					    <option value="name">Product Name</option>
-					    <option value="price">Price</option>
-					  </select>
-					</div>
-					<a href="#" class="icon-sort-down"></a>
-				</form>
+				<div class="col clearfix">
+					<form class="form-inline float-left">
+						<div class="input-group">
+						<label>Sort By</label>
+						  <select name="sort-by" class="custom-select ml-3">
+						    <option value="position" selected>Position</option>
+						    <option value="name">Product Name</option>
+						    <option value="price">Price</option>
+						  </select>
+						</div>
+						<a href="#" class="icon-sort-down"></a>
+					</form>
+					<form class="form-inline float-right">
+						<div class="input-group">
+						<label>Show</label>
+						  <select name="sort-by" class="custom-select ml-3">
+						    <option value="position" selected>12</option>
+						    <option value="name">24</option>
+						    <option value="price">36</option>
+						  </select>
+						</div>
+						<a href="#" class="icon-grid disabled"></a>
+						<a href="#" class="icon-list"></a>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>

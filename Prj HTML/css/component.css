@@ -193,7 +193,8 @@ div .owl-item:hover a{
     color: #fff;
     background-color: #000000 !important;
 }
-.form-inline{
+.form-inline,
+.icon-sort-down{
 	opacity: 0.8;
 }
 .icon-sort-down:before{
@@ -201,11 +202,21 @@ div .owl-item:hover a{
 	font-family: FontAwesome;
 	content: '\f063';
 }
-a.icon-sort-down:hover{
-	text-decoration: none;
-}
 .icon-sort-up:before{
 	margin-left: 5px;
 	font-family: FontAwesome;
 	content: '\f062';
+}
+.icon-grid:before{
+	margin-left: 5px;
+	font-family: FontAwesome;
+	content: '\f00a';
+}
+.icon-list:before{
+	margin-left: 5px;
+	font-family: FontAwesome;
+	content: '\f03a';
+}
+a.icon-sort-down:hover{
+	text-decoration: none;
 }
