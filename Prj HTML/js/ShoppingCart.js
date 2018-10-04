@@ -148,6 +148,49 @@
 		price: 12.49,
 		image: '../imgs/product/WRITING/Pencils/Pre-sharpened Wood Cased/Pre-sharpened Wood Cased cover.jpg'
 		image: '../imgs/product/WRITING/Pencils/Pre-sharpened Wood Cased/Pre-sharpened Wood Cased 1.jpg'
+	},{
+		id: 10,
+		type: 'WRITING'
+		name: 'BIC 4-Color Ballpoint Pen',
+		price: 4.41,
+		image: '../imgs/product/WRITING/Pens & Refills/BIC 4-Color Ballpoint Pen/BIC 4-Color Ballpoint Pen cover.jpg'
+		image: '../imgs/product/WRITING/Pens & Refills/BIC 4-Color Ballpoint Pen/BIC 4-Color Ballpoint Pen 1.jpg'
+		image: '../imgs/product/WRITING/Pens & Refills/BIC 4-Color Ballpoint Pen/BIC 4-Color Ballpoint Pen 2.jpg'
+		image: '../imgs/product/WRITING/Pens & Refills/BIC 4-Color Ballpoint Pen/BIC 4-Color Ballpoint Pen 3.jpg'
+	},{
+		id: 11,
+		type: 'WRITING'
+		name: 'Bullet Journal Planner Pens',
+		price: 6.29,
+		image: '../imgs/product/WRITING/Pens & Refills/Bullet Journal Planner Pens/Bullet Journal Planner Pens  cover.jpg'
+		image: '../imgs/product/WRITING/Pens & Refills/Bullet Journal Planner Pens/Bullet Journal Planner Pens  1.jpg'
+		image: '../imgs/product/WRITING/Pens & Refills/Bullet Journal Planner Pens/Bullet Journal Planner Pens  2.jpg'
+		image: '../imgs/product/WRITING/Pens & Refills/Bullet Journal Planner Pens/Bullet Journal Planner Pens  3.jpg'
+		image: '../imgs/product/WRITING/Pens & Refills/Bullet Journal Planner Pens/Bullet Journal Planner Pens  4.jpg'
+	},{
+		id: 12,
+		type: 'DESK ORGANIZATION'
+		name: 'Stori Clear Plastic',
+		price: 14.99,
+		image: '../imgs/product/DESK ORGANIZATION/Drawer Organizers/Stori Clear Plastic/Stori Clear Plastic cover.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/Drawer Organizers/Stori Clear Plastic/Stori Clear Plastic 1.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/Drawer Organizers/Stori Clear Plastic/Stori Clear Plastic 2.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/Drawer Organizers/Stori Clear Plastic/Stori Clear Plastic 3.jpg'
+	},{
+		id: 13,
+		type: 'DESK ORGANIZATION'
+		name: 'Safco Products Onyx Mesh',
+		price: 29.29,
+		image: '../imgs/product/DESK ORGANIZATION/File Folder Racks & Holders/Safco Products Onyx Mesh/Safco Products Onyx Mesh cover.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/File Folder Racks & Holders/Safco Products Onyx Mesh/Safco Products Onyx Mesh 1.jpg'
+	},{
+		id: 14,
+		type: 'DESK ORGANIZATION'
+		name: 'SimpleHouseware 6 Tier Wall Mount',
+		price: 19.97,
+		image: '../imgs/product/DESK ORGANIZATION/Hanging Wall Files/SimpleHouseware 6 Tier Wall Mount/SimpleHouseware 6 cover.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/Hanging Wall Files/SimpleHouseware 6 Tier Wall Mount/SimpleHouseware 6 1.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/Hanging Wall Files/SimpleHouseware 6 Tier Wall Mount/SimpleHouseware 6 2.jpg'
 	},
 
 
