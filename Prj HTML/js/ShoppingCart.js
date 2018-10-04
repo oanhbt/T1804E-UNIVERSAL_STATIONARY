@@ -115,7 +115,7 @@
 		image: '../imgs/product/paper/Laser Printer Paper/Premium32/Premium32 1.jpg'
 		image: '../imgs/product/paper/Laser Printer Paper/Premium32/Premium32 2.jpg'
 	},
-{
+		{
 		id: 6,
 		type: 'paper'
 		name: 'Filler Paper 1',
@@ -124,6 +124,30 @@
 		image: '../imgs/product/paper/Filler Paper/Filler Paper 1/Filler Paper 1.jpg'
 		image: '../imgs/product/paper/Filler Paper/Filler Paper 1/Filler Paper 2.jpg'
 		image: '../imgs/product/paper/Filler Paper/Filler Paper 1/Filler Paper 3.jpg'
+	},{
+		id: 7,
+		type: 'WRITING'
+		name: 'Correction Tape',
+		price: 12.36,
+		image: '../imgs/product/WRITING/Erasers & Correction Products/Correction Tape/Correction Tape cover.jpg'
+		image: '../imgs/product/WRITING/Erasers & Correction Products/Correction Tape/Correction Tape 1.jpg'
+		image: '../imgs/product/WRITING/Erasers & Correction Products/Correction Tape/Correction Tape 2.jpg'
+		image: '../imgs/product/WRITING/Erasers & Correction Products/Correction Tape/Correction Tape 3.jpg'
+	},{
+		id: 8,
+		type: 'WRITING'
+		name: 'Dry Erase Markers',
+		price: 6.39,
+		image: '../imgs/product/WRITING/Markers & Highlighters/Dry Erase Markers/Dry Erase Markers cover.jpg'
+		image: '../imgs/product/WRITING/Markers & Highlighters/Dry Erase Markers/Dry Erase Markers 1.jpg'
+		image: '../imgs/product/WRITING/Markers & Highlighters/Dry Erase Markers/Dry Erase Markers 2.jpg'
+	},{
+		id: 9,
+		type: 'WRITING'
+		name: 'Pre-sharpened Wood Cased',
+		price: 12.49,
+		image: '../imgs/product/WRITING/Pencils/Pre-sharpened Wood Cased/Pre-sharpened Wood Cased cover.jpg'
+		image: '../imgs/product/WRITING/Pencils/Pre-sharpened Wood Cased/Pre-sharpened Wood Cased 1.jpg'
 	},
 
 
