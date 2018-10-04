@@ -73,6 +73,10 @@ a.gplus:before{
 	content: '\f002';
     transition: transform .2s;
 }
+.icon-signin:after{
+	font-family: FontAwesome;
+	content: '\f090';
+}
 .icon-search-scroll{
 	color: #FFFFFFFF;
 }
@@ -174,3 +178,18 @@ div .owl-item:hover a{
 /*compare*/
 
 /*compare*/
+
+/*nav-pills-sign-in*/
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #000000 !important;
+}
+/*nav-pills-sign-in*/
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #000000 !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    background-color: #000000 !important;
+}
