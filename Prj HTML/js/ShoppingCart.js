@@ -93,14 +93,40 @@
 		image3: '../imgs/product/PAPER/Notebooks & Writing Pads/Sticky Notes/Sticky Notes 3.jpg',
 	},{
 		id: 3,
-		name: 'product3',
-		price: 100.43,
-		image: ''
+		type: 'paper'
+		name: 'Double A',
+		price: 15.99,
+		image: '../imgs/product/paper/Laser Printer Paper/Double A/Double A cover.jpg'
+		image: '../imgs/product/paper/Laser Printer Paper/Double A/Double A 1.jpg'
 	},{
 		id: 4,
-		name: 'product4',
-		price: 99.9,
-		image: ''
-	}];
+		type: 'paper'
+		name: 'Hammermill Paper',
+		price: 15.99,
+		image: '../imgs/product/paper/Laser Printer Paper/Hammermill Paper/Hammermill Paper cover.jpg'
+		image: '../imgs/product/paper/Laser Printer Paper/Hammermill Paper/Hammermill Paper 1.jpg'
+		image: '../imgs/product/paper/Laser Printer Paper/Hammermill Paper/Hammermill Paper 2.jpg'
+	},{
+		id: 5,
+		type: 'paper'
+		name: 'Premium32',
+		price: 13.99,
+		image: '../imgs/product/paper/Laser Printer Paper/Premium32/Premium32 cover.jpg'
+		image: '../imgs/product/paper/Laser Printer Paper/Premium32/Premium32 1.jpg'
+		image: '../imgs/product/paper/Laser Printer Paper/Premium32/Premium32 2.jpg'
+	},
+{
+		id: 6,
+		type: 'paper'
+		name: 'Filler Paper 1',
+		price: 9.5,
+		image: '../imgs/product/paper/Filler Paper/Filler Paper 1/Filler Paper cover.jpg'
+		image: '../imgs/product/paper/Filler Paper/Filler Paper 1/Filler Paper 1.jpg'
+		image: '../imgs/product/paper/Filler Paper/Filler Paper 1/Filler Paper 2.jpg'
+		image: '../imgs/product/paper/Filler Paper/Filler Paper 1/Filler Paper 3.jpg'
+	},
+
+
+	];
 
 })();
