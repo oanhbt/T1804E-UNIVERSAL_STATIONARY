@@ -191,6 +191,22 @@
 		image: '../imgs/product/DESK ORGANIZATION/Hanging Wall Files/SimpleHouseware 6 Tier Wall Mount/SimpleHouseware 6 cover.jpg'
 		image: '../imgs/product/DESK ORGANIZATION/Hanging Wall Files/SimpleHouseware 6 Tier Wall Mount/SimpleHouseware 6 1.jpg'
 		image: '../imgs/product/DESK ORGANIZATION/Hanging Wall Files/SimpleHouseware 6 Tier Wall Mount/SimpleHouseware 6 2.jpg'
+	},{
+		id: 15,
+		type: 'DESK ORGANIZATION'
+		name: 'SimpleHouseware Mesh',
+		price: 26.87,
+		image: '../imgs/product/DESK ORGANIZATION/Letter Trays & Stacking Supports/SimpleHouseware Mesh/SimpleHouseware Mesh cover.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/Letter Trays & Stacking Supports/SimpleHouseware Mesh/SimpleHouseware Mesh 1.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/Letter Trays & Stacking Supports/SimpleHouseware Mesh/SimpleHouseware Mesh 2.jpg'
+	},{
+		id: 16,
+		type: 'DESK ORGANIZATION'
+		name: 'iTouchless SoftStep',
+		price: 79.99,
+		image: '../imgs/product/DESK ORGANIZATION/Office Waste Bins/iTouchless SoftStep/iTouchless SoftStep cover.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/Office Waste Bins/iTouchless SoftStep/iTouchless SoftStep 1.jpg'
+		image: '../imgs/product/DESK ORGANIZATION/Office Waste Bins/iTouchless SoftStep/iTouchless SoftStep 2.jpg'
 	},
 
 
