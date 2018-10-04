@@ -85,8 +85,8 @@
 	},{
 		id: 2,
 		type: 'paper',
-		name: 'product2',
-		price: 14.5,
+		name: 'Sticky Notes',
+		price: 19.5,
 		image: '../imgs/product/PAPER/Notebooks & Writing Pads/Sticky Notes/Sticky Notes cover.jpg',
 		image1: '../imgs/product/PAPER/Notebooks & Writing Pads/Sticky Notes/Sticky Notes 1.jpg',
 		image2: '../imgs/product/PAPER/Notebooks & Writing Pads/Sticky Notes/Sticky Notes 2.jpg',
