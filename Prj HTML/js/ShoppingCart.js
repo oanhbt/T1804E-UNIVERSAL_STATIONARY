@@ -84,9 +84,13 @@
 		image1: '../imgs/product/PAPER/Notebooks & Writing Pads/Redi-Tag/Redi-Tag 1.jpg'
 	},{
 		id: 2,
+		type: 'paper',
 		name: 'product2',
 		price: 14.5,
-		image: ''
+		image: '../imgs/product/PAPER/Notebooks & Writing Pads/Sticky Notes/Sticky Notes cover.jpg',
+		image1: '../imgs/product/PAPER/Notebooks & Writing Pads/Sticky Notes/Sticky Notes 1.jpg',
+		image2: '../imgs/product/PAPER/Notebooks & Writing Pads/Sticky Notes/Sticky Notes 2.jpg',
+		image3: '../imgs/product/PAPER/Notebooks & Writing Pads/Sticky Notes/Sticky Notes 3.jpg',
 	},{
 		id: 3,
 		name: 'product3',
