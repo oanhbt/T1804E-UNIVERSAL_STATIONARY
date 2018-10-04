@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(".icon-sort-up").click(function(){
+	$(".form-inline a").click(function(){
 		$(this).toggleClass('icon-sort-up');
 	});
 });
