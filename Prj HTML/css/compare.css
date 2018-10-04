@@ -6,4 +6,9 @@
 .th-header{
 	width: 400px;
 }
+.rating{
+	color: yellow;
+  line-height:32px;
+  font-size:1.25em;
+}
 /*compare*/
