@@ -7,7 +7,7 @@
 	
 		$scope.products = productsData;
 		$scope.cart = [];
-	  $scope.total = 0;
+	  	$scope.total = 0;
 	  /*
 		if ($cookieStore.get('cart') !== null) {
 		 		$scope.cart =  $cookieStore.get('cart');
