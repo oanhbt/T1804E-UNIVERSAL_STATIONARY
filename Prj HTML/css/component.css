@@ -167,6 +167,13 @@ div .owl-item:hover a{
 	opacity: 1;
 	transition: 0.5s;
 }
+div .card:hover img{
+	opacity: 0.5;
+}
+div .card:hover a{
+	opacity: 1;
+	transition: 0.5s;
+}
 .quickview{
 	position: absolute;
 	top: 0;
