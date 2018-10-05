@@ -13,6 +13,11 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css">
 	<link rel="stylesheet" type="text/css" href="css/mega-menu.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-cookies.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-sanitize.min.js"></script>
+    <script 
+	<script type="text/javascript" src="ShoppingCart.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.theme.default.min.css">
 	<script type="text/javascript" src="css/owlcarousel/owl.carousel.min.js"></script>
@@ -23,7 +28,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.min.js">
 </head>
-<body>
+<body ng-app="store" ng-controller="StoreController">
 	<!-- Navigation -->
 	<div class="fixed-top navbar navbar-light bg-light navbar-static-top navbar-expand-lg">
 	    <div class="container">
@@ -446,7 +451,7 @@
 						    <div class="owl-stage-outer">
 						        <div class="owl-stage">
 
-						            <div class="owl-item">
+						            <div class="owl-item" ng-repeat="product in products | filter: type = 'paper'">
 									  <div class="card text-center">
 									    <a href="#"><img class="card-img-top " src="imgs/product/paper/Notebooks & Writing Pads/Sticky Notes/Sticky Notes cover.jpg" alt="Sticky Notes"></a>
 									    <div class="quickview">

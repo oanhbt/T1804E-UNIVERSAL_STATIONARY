@@ -1,4 +1,6 @@
 // http://embed.plnkr.co/wrT0ao/
+
+// https://codepen.io/ericwshea/pen/mAyYyP
 (function(){
 
 	var app = angular.module('store', ['ngCookies']);
@@ -7,7 +9,18 @@
 	
 		$scope.products = productsData;
 		$scope.cart = [];
-	  $scope.total = 0;
+	  	$scope.total = 0;
+
+  		$scope.propertyName = 'id';
+  		$scope.reverse = true;
+  		$scope.products = orderBy(products, $scope.propertyName, $scope.reverse);
+
+  		$scope.sortBy = function(propertyName) {
+    		$scope.reverse = (propertyName !== null && $scope.propertyName === propertyName)
+        	? !$scope.reverse : false;
+    		$scope.propertyName = propertyName;
+    		$scope.products = orderBy(products, $scope.propertyName, $scope.reverse);
+    	};
 	  /*
 		if ($cookieStore.get('cart') !== null) {
 		 		$scope.cart =  $cookieStore.get('cart');
