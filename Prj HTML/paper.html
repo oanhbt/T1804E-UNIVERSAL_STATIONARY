@@ -13,6 +13,11 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css">
 	<link rel="stylesheet" type="text/css" href="css/mega-menu.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-cookies.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-sanitize.min.js"></script>
+    <script 
+	<script type="text/javascript" src="js/ShoppingCart.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.theme.default.min.css">
@@ -421,8 +426,30 @@
 				</div>
 			</div>
 
-			<div class="row">
-				aa
+			<div class="row my-5">
+				<div ng-app="store" ng-controller="StoreController">
+					<ul class="list-group text-center">
+						<li class="col-md-4" ng-repeat="product in products">
+							<div class="card">
+								<a href="#"><img class="card-img-top" ng-src="{{product.image}}" alt="Filler paper"  style="height:100px; width:200px"></a>
+								<div class="quickview">
+									<a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+								</div>
+								<div class="card-body">
+									<p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
+									<h6>{{product.price | currency}}</h6>
+								</div>
+								<div class="card-footer d-flex justify-content-center">
+									<a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+									<button class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart" ng-click="addItemToCart(product)"> ADD TO CART</button>
+									<a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
 			</div>
 		</div>
 	</div>
