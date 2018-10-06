@@ -7,7 +7,7 @@
 	
 		$scope.products = productsData;
 		$scope.cart = [];
-	  $scope.total = 0;
+	  	$scope.total = 0;
 	  /*
 		if ($cookieStore.get('cart') !== null) {
 		 		$scope.cart =  $cookieStore.get('cart');
@@ -80,7 +80,7 @@
 		type: 'paper',
 		name: 'Redi-Tag',
 		price: 3.71,
-		image: '../imgs/product/PAPER/Notebooks & Writing Pads/Redi-Tag/Redi-Tag Cover.jpg',
+		'image': '',
 		image1: '../imgs/product/PAPER/Notebooks & Writing Pads/Redi-Tag/Redi-Tag 1.jpg'
 	},{
 		id: 2,

@@ -73,12 +73,21 @@ a.gplus:before{
 	content: '\f002';
     transition: transform .2s;
 }
+.icon-search-scroll{
+	color: #FFFFFFFF;
+}
+.icon-cart:before{
+	font-family: FontAwesome;
+	content: '\f07a';
+	font-size: 25px;
+}
+.icon-cart-scroll{
+	color: #FFFFFFFF;
+}
+
 .icon-signin:after{
 	font-family: FontAwesome;
 	content: '\f090';
-}
-.icon-search-scroll{
-	color: #FFFFFFFF;
 }
 .shopping-cart:before{
 	font-family: FontAwesome;
@@ -122,6 +131,16 @@ a.gplus:hover{
     -webkit-transform: scale(1.5);
     transform: scale(1.5); 
 }
+.icon-cart:hover{
+	color: #000000FF;
+	text-decoration: none;
+	font-size: 25px;
+}
+.icon-cart-scroll:hover{
+	color: #FFFFFFFF;
+	text-decoration: none;
+	font-size: 25px;
+}
 /*icon-page*/
 
 
@@ -164,6 +183,13 @@ div .owl-item:hover img{
 	opacity: 0.5;
 }
 div .owl-item:hover a{
+	opacity: 1;
+	transition: 0.5s;
+}
+div .card:hover img{
+	opacity: 0.5;
+}
+div .card:hover a{
 	opacity: 1;
 	transition: 0.5s;
 }
