@@ -14,9 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="css/mega-menu.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-cookies.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-sanitize.min.js"></script>
-    <script 
 	<script type="text/javascript" src="ShoppingCart.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.theme.default.min.css">
@@ -291,14 +288,12 @@
 				    <li class="nav-item">
 				    	<a class="nav-link icon-signin" href="#" data-toggle="modal" data-target="#myModal-signin">SIGN IN </a>
 				    </li>
-				    <li class="nav-item">
-				    </li>
 	            </ul>
 
 	            <a href="#" class="icon-search" data-toggle="modal" data-target="#myModal"></a>
-	            <a class="ml-4 icon-cart" href="#" data-toggle="collapse" data-target="#shoppingCart"></a>
-	            <div id="shoppingCart" class="collapse">
-	            	<img src="imgs/banner/banner_1n_1.jpg">
+	            <div class="cart">
+	            	<a class="ml-4 icon-cart" href="#" data-toggle="modal" data-target="#myModal-cart"></a>
+	            	<span class="num-order">0</span>
 	            </div>
 	        </div>
 	    </div>
@@ -386,6 +381,48 @@
   	</div>
   <!-- End Modal -->
   
+	
+  	<div class="modal fade" id="myModal-cart">
+    	<div class="modal-dialog modal-dialog-centered modal-lg">
+      		<div class="modal-content">
+      
+        <!-- Modal Header -->
+		        <div class="modal-header">
+		          <h4 class="modal-title icon-cart text-dark">   My Cart</h4>
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        </div>
+        
+        <!-- Modal body -->
+		        <div class="modal-body">
+		        	<table class="table table-hover">
+					    <tbody ng-init="total = 0">
+					      <tr ng-repeat="product in products | filter: type = 'paper'">
+					        <td><img ng-src="{{product.image}}" style="width: 40px;"></td>
+					        <td class="pt-4">{{product.name}}</td>
+					        <td class="pt-4">{{product.price | currency}}</td>
+					        <td class="pt-3"><input class="form-control" type="number" min="1" ng-model="qty"></td>
+					        <td class="pt-4">{{ product.price * qty | currency}}<span class="float-right" ng-click="removeItem($index)" style="cursor:pointer;">×</span></td>
+
+					      </tr>
+					      <tr>
+					      	<td></td>
+					      	<td>Total</td>
+					      	<td></td>
+					      	<td></td>
+					      	<td>{{ total | currency}}</td>
+					      </tr>
+					    </tbody>
+					  </table>
+		        </div>
+        
+        <!-- Modal footer -->
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        </div>
+        
+      		</div>
+    	</div>
+  	</div>
 
   <!-- carosel -->
 	<div class="mt-6">

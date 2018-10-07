@@ -7,15 +7,19 @@
 	app.controller('StoreController', function($scope){
 	
 		$scope.products = productsData;
+		$scope.qty = 1;
+		$scope.removeItem = function(x){
+			$scope.products.splice(x, 1);
+		}
+		$scope.cart =[];
 
 	  });
-
 	var productsData = [{
 		id: 1,
 		type: 'paper',
 		name: 'Redi-Tag',
 		price: 3.71,
-		'image': 'imgs/product/paper/Notebooks & Writing Pads/Redi-Tag/Redi-Tag Cover.jpg',
+		image: 'imgs/product/paper/Notebooks & Writing Pads/Redi-Tag/Redi-Tag Cover.jpg',
 		image1: 'imgs/product/paper/Notebooks & Writing Pads/Redi-Tag/Redi-Tag 1.jpg'
 	},{
 		id: 2,

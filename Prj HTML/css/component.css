@@ -246,3 +246,28 @@ div .card:hover a{
 a.icon-sort-down:hover{
 	text-decoration: none;
 }
+
+/**/
+
+#myModal-cart .modal-header{
+	border-bottom: 0px;
+}
+.cart{
+	-webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    position: relative;
+}
+.num-order{
+	position: absolute;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+    top: -1px;
+    right: -10px;
+}
