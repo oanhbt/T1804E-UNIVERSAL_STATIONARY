@@ -1,51 +1,1015 @@
-<html ng-app="myApp">
-  <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-    <script type="text/javascript" src="test-angularJs.js"></script>
-    <link rel="stylesheet" type="text/css" href="test-angularJs.css">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <title>FPT Stationary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/component.css">
+  <link rel="stylesheet" type="text/css" href="css/mega-menu.css">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript" src="test-angularJs.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.theme.default.min.css">
+  <script type="text/javascript" src="css/owlcarousel/owl.carousel.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/ShrinkNavOnScroll.css">
+  <script type="text/javascript" src="js/ShrinkNavOnScroll.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.min.js">
+</head>
+<body ng-app="store" ng-controller="StoreController">
+  <!-- Navigation -->
+  <div class="fixed-top navbar navbar-light bg-light navbar-static-top navbar-expand-lg">
+      <div class="container">
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">☰</button>
+                  <a class="navbar-brand" href="#">
+                    <strong>FPT STATIONARY</strong>
+                  </a>
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav m-auto">
+                  <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                  <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">SUPPLIERS</a>
+                      <ul class="dropdown-menu megamenu">
+                          <li class="dropdown-item">
+                              <div class="row">
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                        <img src="imgs/supplier/3M_BW_CA_logo._SR680,295_.jpg">
+                                      </a>
+                                  </div>
+                              </div>
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                          <img src="imgs/supplier/AT-A-GLANCE_us_office_logotiles_680x295._CB487521057_.jpg">
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                        <img src="imgs/supplier/OOMA_us_office_logotiles_680x295.jpg">
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                          <img src="imgs/supplier/OXFORD_us_office_logotiles_680x295.jpg">
+                                      </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                        <img src="imgs/supplier/papermate_BW_CA_logo._CB486705712_.jpg">
+                                      </a>
+                                  </div>
+                              </div>
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                          <img src="imgs/supplier/pilot_BW_CA_logo._CB486705713_.jpg">
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                        <img src="imgs/supplier/prsimacolor_BW_CA_logo._CB486705712_.jpg">
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                          <img src="imgs/supplier/sharpie_BW_CA_logo._CB486705712_.jpg">
+                                      </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                        <img src="imgs/supplier/swingline_BW_CA_logo._CB486705712_.jpg">
+                                      </a>
+                                  </div>
+                              </div>
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                          <img src="imgs/supplier/XCM_1105301_Manual_670x250_1105301_us_officeproducts_brand_670x250_jpg_Shop_by_brand_Mead_LOGO._SR680,295_.jpg">
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                        <img src="imgs/supplier/hp.png">
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3 text-center">
+                                    <div class="card">
+                                      <a href="#" class="thumbnail">
+                                          <img src="imgs/supplier/casio.jpg">
+                                      </a>
+                                  </div>
+                                </div>
+                              </div>
+                          </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-large nav-item"><a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">CATEGORIES</a>
+                    <ul class="dropdown-menu megamenu">
+                        <div class="row">
+                          <li class="col-md-6 col-xl-3 dropdown-item">
+                              <ul>
+                                  <li class="dropdown-header"><a href="#paper"><h6>PAPER</h6></a></li>
+                                  <li>
+                                    <a href="#">Notebooks & Writing Pads
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Copy & Multipurpose Paper
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Cards & Card Stock
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Laser Printer Paper</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Colored Paper</a>
+                                  </li>
+                                  <li class="divider"></li>
+                                  <li class="dropdown-header"><a href="#writing"><h6>WRITING</h6></a></li>
+                                  <li>
+                                    <a href="#">Pens & Refills</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Pencils</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Markers & Highlighters</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Erasers & Correction Products</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="col-md-6 col-xl-3 dropdown-item">
+                              <ul>
+                                  <li class="dropdown-header"><a href="#desk-organization"><h6>DESK ORGANIZATION</h6></a></li>
+                                  <li>
+                                    <a href="#">Letter Trays & Stacking Supports</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Drawer Organizers</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Hanging Wall Files</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">File Folder Racks & Holders</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Office Waste Bins</a>
+                                  </li>
+                                  <li class="divider"></li>
+                                  <li class="dropdown-header"><a href="#"><h6>BOXES & STORAGE</h6></a></li>
+                                  <li>
+                                    <a href="#">Storage File Boxes</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Storage Crates</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Filing Crates & Posting Tubs</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Modular Storage Systems</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="col-md-6 col-xl-3 dropdown-item">
+                              <ul>
+                                  <li class="dropdown-header"><a href="#"><h6>CALENDARS & PLANNERS</h6></a></li>
+                                  <li>
+                                    <a href="#">Wall Calendars</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Personal Organizers</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Planners, Refills & Covers</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Planning Boards</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Planning Pads</a>
+                                  </li>
+                                  <li class="divider"></li>
+                                  <li class="dropdown-header"><a href="#"><h6>EDUCATION & CRAFTS</h6></a></li>
+                                  <li>
+                                    <a href="#">Math Materials</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Arts & Crafts Supplies</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Social Studies Materials</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">School Supply Storage Boxes</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="col-md-6 col-xl-3 dropdown-item">
+                              <ul>
+                                  <li class="dropdown-header"><a href="#"><h6>NOTEBOOKS & PADS</h6></a></li>
+                                  <li>
+                                    <a href="#">Hardcover Executive Notebooks</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Self-Stick Notes</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Wirebound Notebooks</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Composition Notebooks</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Subject Notebooks</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Memo & Scratch Pads</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Letter & Legal Ruled Pads</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Steno Notebooks</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Chart Tablets</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Graph & Data Pads</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </div>
+                    </ul>
+                    
+                </li>
+                <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link icon-signin" href="#" data-toggle="modal" data-target="#myModal-signin">SIGN IN </a>
+            </li>
+              </ul>
+
+              <a href="#" class="icon-search" data-toggle="modal" data-target="#myModal"></a>
+              <div class="cart">
+                <a class="ml-4 icon-cart" href="#" data-toggle="modal" data-target="#myModal-cart"></a>
+                <span class="num-order">0</span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Navigation -->
+
+
+  <!-- The Modal search-->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          
+          <!-- Modal body -->
+            <div class="modal-body">
+              <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append">
+                <button class="btn btn-dark" type="submit">Go</button> 
+            </div>
+          </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  <!-- End Modal -->
+
+  <!-- The Modal sign in-->
+    <div class="modal" id="myModal-signin">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          
+          <!-- Modal body -->
+            <div class="modal-body">
+              <ul class="nav nav-pills" role="tablist">
+              <li class="nav-item m-auto">
+                <a class="nav-link active" data-toggle="tab" href="#signin">SIGN IN</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" data-toggle="tab" href="#signup">SIGN UP</a>
+              </li>
+          </ul>
+
+            <!-- Tab panes -->
+          <div class="tab-content">
+              <div id="signin" class="container tab-pane active"><br>
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="mail" name="Email" placeholder="Email Address">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="pwd" name="password" placeholder="Password">
+                  </div>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                    <label class="custom-control-label" for="customCheck">Remember Me</label>
+                  </div>
+                  <button type="submit" class="btn btn-dark btn-block">Login</button>
+                  <a href="#" class="mt-5">Forgot Password?</a>
+              </form>
+                  
+              </div>
+              <div id="signup" class="container tab-pane fade"><br>
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="usr" name="username" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="mail" name="Email" placeholder="Email Address">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="pwd" name="password" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="pwd" name="password" placeholder="Confirm Password">
+                  </div>
+                  <button type="submit" class="btn btn-dark btn-block">REGISTER NOW</button>
+              </form>
+              </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  <!-- End Modal -->
   
-  <body class="container" ng-controller="myController">
-    <h1>Welcome to the GA Camping Store</h1>
-    <br/>
-    <h4>Filtering input: <input type="text" ng-model="searchText"></h4>
-    <br/>
-    <div class="row">
-      <table class="table col-md-9 col-md-offset-3">
-        <tr>
-          <th>Category</th>
-          <th>Description</th>
-          <th>Price</th>
-          <th class="qty">Qty</th>
-          <th>Total</th>
-        </tr>
-        <tr class="animate-repeat" ng-repeat="item in inventory | filter:searchText | orderBy:'category' ">
-          <td>{{ item.category }}</td>
-          <td>{{ item.description }}</td>
-          <td ng-class="{ 'on-sale' : item.onSale }">{{ item.price | currency }}</td>
-          <td><input type="number" ng-model="item.qty" class="qty"></td>
-          <td>{{ item.qty * item.price | currency }}</td>
-          <td>
-            <button class="btn-primary" ng-click="addItem(item)">Add to Cart</button></td>
-        </tr>
-      </table>
+  
+    <div class="modal fade" id="myModal-cart">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+      
+        <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title icon-cart text-dark">   My Cart</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        
+        <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-hover">
+              <tbody>
+                <tr ng-repeat="item in cart | filter: type = 'paper'">
+                  <td><img ng-src="imgs/images/{{item.image}}" style="width: 40px;"></td>
+                  <td class="pt-4">{{item.name}}</td>
+                  <td class="pt-4">{{item.price | currency}}</td>
+                  <td class="pt-3"><input class="form-control" type="number" min="1" ng-model="item.qty"></td>
+                  <td class="pt-4">{{ item.price * item.qty | currency}}<span class="float-right" ng-click="removeItem($index)" style="cursor:pointer;">×</span></td>
+
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Total</td>
+                  <td></td>
+                  <td>{{totalQty()}}</td>
+                  <td>{{ total() | currency}}</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+        
+        <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        
+          </div>
+      </div>
     </div>
-    <div class="row">
-      <h2>Your Cart:</h2>
-      <ul>
-        <li class="animate-repeat" ng-repeat="item in cart | orderBy:'category'">
-          <span>{{ item.qty + ' x ' + item.description + ' = ' + (getCost(item) | currency) }}</span>
-          <button class="btn-danger btn-xs" ng-click="removeItem(item);">Remove Item</button>
-          </br>
-          </br>
-        </li>
-      </ul>
-      <h3>Total: {{ getTotal() | currency }}</h3>
-      <button class="btn-danger" ng-click="clearCart();">Clear Cart</button>
+
+  <!-- carosel -->
+  <div class="mt-6">
+    <div class="container-fluid p-0 ">
+      
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+          <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/carosel/carosel_5.png" alt="1">
+            <div class="carousel-caption1 text-dark">
+              <h4>It's the best time of year!</h4>
+              <h1>Happy VietNamese Women's day</h1>
+              <h3 class="text-uppercase mb-5">Get up to 70% off</h3>
+          <button type="button" class="btn btn-outline-dark">SHOP NOW</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/carosel/carosel_3.jpg" alt="2">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/carosel/carosel_4.png" alt="3">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/carosel/carosel_2.jpg" alt="4">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/carosel/carosel_1.jpg" alt="5">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      
     </div>
-  </body>
+  </div>
+  <!-- carosel -->
+
+    <!-- main-product -->
+    <div class="row my-6">
+      <div class="container">
+
+        <div class="row" id="paper">
+          
+        <div class="col">
+          
+          <div class="row my-3">
+              <h3>PAPER</h3>
+              <a class="btn btn-outline-dark ml-auto" href="paper.html">SEE MORE</a>
+            </div>
+            <div class="row">
+            <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+
+                        <div class="owl-item"">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top " src="imgs/product/paper/Notebooks & Writing Pads/Sticky Notes/Sticky Notes cover.jpg" alt="Sticky Notes"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Sticky Notes</a></p>
+                        <h6>$19.50</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/paper/Notebooks & Writing Pads/Redi-Tag/Redi-Tag Cover.jpg" alt="Redi-Tag"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Redi Tag</a></p>
+                        <h6>$3.71</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/paper/Laser Printer Paper/Premium32/Premium32 cover.jpg" alt="Premium32"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">HP Paper Premium32</a></p>
+                        <h6>$13.99</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/paper/Laser Printer Paper/Double A/Double A cover.jpg" alt="Double A"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Double A Copy Paper</a></p>
+                        <h6>$15.99</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/paper/Filler Paper/Filler Paper 1/Filler Paper cover.jpg" alt="Filler paper"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Filler Paper</a></p>
+                        <h6>$9.50</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/paper/Laser Printer Paper/Hammermill Paper/Hammermill Paper cover.jpg"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Hammermill Paper</a></p>
+                        <h6>$32.28</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="row" id="writing">
+          
+        <div class="col">
+          
+          <div class="row my-3">
+              <h3>WRITING</h3>
+              <a class="btn btn-outline-dark ml-auto" href="writing.html">SEE MORE</a>
+            </div>
+            <div class="row">
+            <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top " src="imgs/product/writing/Pens & Refills/Bullet Journal Planner Pens/Bullet Journal Planner Pens  cover.jpg" alt="Bullet Journal Planner Pens"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Bullet Journal Planner Pens</a></p>
+                        <h6>$6.29</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart" ng-click="addItem()"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/writing/Pens & Refills/BIC 4-Color Ballpoint Pen/BIC 4-Color Ballpoint Pen cover.jpg" alt="BIC 4-Color Ballpoint Pen"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">BIC 4-Color Ballpoint Pen</a></p>
+                        <h6>$4.41</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/writing/Pencils/Pre-sharpened Wood Cased/Pre-sharpened Wood Cased cover.jpg" alt="Pre-sharpened Wood Cased "></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Pre-sharpened Wood Cased</a></p>
+                        <h6>$12.49</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/writing/Markers & Highlighters/Dry Erase Markers/Dry Erase Markers cover.jpg" alt="Dry Erase Markers"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Low-Odor Dry Erase Markers</a></p>
+                        <h6>$6.39</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/writing/Erasers & Correction Products/Correction Tape/Correction Tape cover.jpg" alt="Correction Tape"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Correction Tape</a></p>
+                        <h6>$12.36</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="row" id="desk-organization">
+          
+        <div class="col">
+          
+          <div class="row my-3">
+              <h3>DESK ORGANIZATION</h3>
+              <a class="btn btn-outline-dark ml-auto" href="desk-organization.html">SEE MORE</a>
+            </div>
+            <div class="row">
+            <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top p-3" src="imgs/product/DESK ORGANIZATION/Letter Trays & Stacking Supports/SimpleHouseware Mesh/SimpleHouseware Mesh cover.jpg" alt="SimpleHouseware Mesh"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">SimpleHouseware Mesh</a></p>
+                        <h6>$26.87</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/DESK ORGANIZATION/Drawer Organizers/Stori Clear Plastic/Stori Clear Plastic cover.jpg" alt="STORi Clear Plastic"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">STORi Clear Plastic</a></p>
+                        <h6>$14.99</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/DESK ORGANIZATION/Hanging Wall Files/SimpleHouseware 6 Tier Wall Mount/SimpleHouseware 6 cover.jpg" alt="SimpleHouseware 6"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">SimpleHouseware 6</a></p>
+                        <h6>$19.97</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/DESK ORGANIZATION/File Folder Racks & Holders/Safco Products Onyx Mesh/Safco Products Onyx Mesh cover.jpg" alt="Safco Products Onyx Mesh"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">Safco Products Onyx Mesh</a></p>
+                        <h6>$29.29</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="owl-item">
+                    <div class="card text-center">
+                      <a href="#"><img class="card-img-top" src="imgs/product/DESK ORGANIZATION/Office Waste Bins/iTouchless SoftStep/iTouchless SoftStep cover.jpg" alt="iTouchless SoftStep"></a>
+                      <div class="quickview">
+                        <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-link"><a href="#" class="text-dark">iTouchless SoftStep</a></p>
+                        <h6>$79.99</h6>
+
+                      </div>
+                      <div class="card-footer d-flex justify-content-center">
+                        <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+                        <a href="#" class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart"> ADD TO CART</a>
+
+                        <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                      </div>
+                    </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:15,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    </script>
+  <!-- main-product -->
+
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="bg-dark">
+      <div class="container py-5">
+
+        <div class="row">
+          <div class="col-md-3">
+            <h6 class="footer_tittle mb-3">CONTACT INFOMATION</h6>
+                  <div class="footer_content text-white">
+                    <p>
+                      <i class="fa fa-home mr-3"></i> <a href="">No 8, Ton That Thuyet, Ha Noi</a></p>
+                    <p>
+                      <i class="fa fa-envelope mr-3"></i><a href="">info@example.com</a></p>
+                    <p>
+                      <i class="fa fa-phone mr-3"></i><a href="tel:+0123456788"> + 01 234 567 88</a></p>
+                    <p>
+                      <i class="fa fa-print mr-3"></i><a href="">+ 01 234 567 89</a></p>
+                  </div>        
+          </div>
+
+          <div class="col-md-9">
+            
+            <div class="row">
+              
+              <div class="col-md-4">
+                <h6 class="footer_tittle">MY ACCOUNT</h6>
+                <div class="footer_content">
+                  <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Compare</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h6 class="footer_tittle">FPT STATIONARY</h6>
+                <div class="footer_content">
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Job</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h6 class="footer_tittle">CUSTOMER SERVICES</h6>
+                <div class="footer_content">
+                  <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Faqs</a></li>
+                    <li><a href="#">Online Shopping</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+              <form class="w-50 m-auto">
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Email Address">
+                  <div class="input-group-append">
+                    <button class="btn btn-danger" type="submit">SUBSCRIBE</button>  
+                   </div>
+                </div>
+              </form>
+            </div>
+        
+        <hr class="bg-secondary">
+        <div class="row text-white">
+          <div class="col-lg-4 text-center">
+            <div class="icon-social">
+              <span id="follow_us">Follow Us </span>
+              <a href="http://www.facebook.com" class="icon facebook"></a>
+              <a href="http://www.twitter.com" class="icon twitter"></a>
+              <a href="https://plus.google.com/discover?hl=vi" class="icon gplus"></a>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center text-uppercase text">
+            © 2018 FPT Stationary. All Rights
+          </div>
+          <div class="col-lg-4 text-center">
+            <img src="imgs/payment/payment-icon.png" alt="Payment">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+
+</body>
 </html>
