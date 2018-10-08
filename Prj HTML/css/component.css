@@ -134,12 +134,10 @@ a.gplus:hover{
 .icon-cart:hover{
 	color: #000000FF;
 	text-decoration: none;
-	font-size: 25px;
 }
 .icon-cart-scroll:hover{
 	color: #FFFFFFFF;
 	text-decoration: none;
-	font-size: 25px;
 }
 /*icon-page*/
 
@@ -252,22 +250,9 @@ a.icon-sort-down:hover{
 #myModal-cart .modal-header{
 	border-bottom: 0px;
 }
-.cart{
-	-webkit-flex-shrink: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    position: relative;
+
+/*image-item*/
+.modal-body table tbody tr td img{
+	width: 100px;
 }
-.num-order{
-	position: absolute;
-    font-size: 10px;
-    width: 15px;
-    height: 15px;
-    text-align: center;
-    line-height: 15px;
-    background: red;
-    color: #fff;
-    border-radius: 50%;
-    top: -1px;
-    right: -10px;
-}
+/*image-item*/

@@ -293,8 +293,7 @@
 
               <a href="#" class="icon-search" data-toggle="modal" data-target="#myModal"></a>
               <div class="cart">
-                <a class="ml-4 icon-cart" href="#" data-toggle="modal" data-target="#myModal-cart"></a>
-                <span class="num-order">{{totalQty()}}</span>
+                <a class="icon-cart" href="#" data-toggle="modal" data-target="#myModal-cart">       {{totalQty()}} item</a>
               </div>
           </div>
       </div>
@@ -398,7 +397,7 @@
               <table class="table table-hover">
               <tbody ng-show="carts.length > 0">
                 <tr ng-repeat="cart in carts">
-                  <td><img ng-src="imgs/images/{{cart.image}}" style="width: 100px;"></td>
+                  <td><img ng-src="imgs/images/{{cart.image}}"></td>
                   <td class="pt-4">{{cart.name}}</td>
                   <td class="pt-4">{{cart.price | currency}}</td>
                   <td class="pt-3"><input class="form-control" type="number" min="1" ng-model="cart.qty"></td>
@@ -484,50 +483,50 @@
   <!-- carosel -->
 
   	<!-- main-product -->
-  	<div class="row my-6">
+  	<div class="">
   		<div class="container">
 
   			<div class="row" id="paper">
   				
-				<div class="col">
-					
-					<div class="row my-3">
-		  				<h3>PAPER</h3>
-		  				<a class="btn btn-outline-dark ml-auto" href="paper.html">SEE MORE</a>
-		  			</div>
-		  			<div class="row">
-						<div class="owl-carousel owl-theme owl-loaded owl-drag">
-						    <div class="owl-stage-outer">
-						        <div class="owl-stage">
+  				<div class="col">
+  					
+  					<div class="row my-3">
+  		  				<h3>PAPER</h3>
+  		  				<a class="btn btn-outline-dark ml-auto" href="paper.html">SEE MORE</a>
+  		  			</div>
+  		  			<div class="row">
+  						<div class="owl-carousel owl-theme owl-loaded owl-drag">
+  						    <div class="owl-stage-outer">
+  						        <div class="owl-stage">
 
-						            <div class="owl-item" ng-repeat="product in products | filter: type = 'paper'">
-									  <div class="card text-center">
-									    <a href="#"><img class="card-img-top p-3" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
-									    <div class="quickview">
-									    	<a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
-									    </div>
-									    <div class="card-body">
-									      <p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
-									      <h6>{{product.price | currency}}</h6>
+  						            <div class="owl-item" ng-repeat="product in products | filter: type = 'paper'">
+  									  <div class="card text-center">
+  									    <a href="#"><img class="card-img-top p-3" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
+  									    <div class="quickview">
+  									    	<a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+  									    </div>
+  									    <div class="card-body">
+  									      <p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
+  									      <h6>{{product.price | currency}}</h6>
 
-									    </div>
-									    <div class="card-footer d-flex justify-content-center">
-									    	<a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+  									    </div>
+  									    <div class="card-footer d-flex justify-content-center">
+  									    	<a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
 
-									    	<button class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
+  									    	<button class="btn btn-outline-dark mx-auto shopping-cart add-cart text-lg" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
 
-									    	<a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+  									    	<a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
 
-									    </div>
-									  </div>
-						            </div>
+  									    </div>
+  									  </div>
+  						            </div>
 
-						        </div>
-						    </div>
-						</div>
-		  			</div>
+  						        </div>
+  						    </div>
+  						</div>
+  		  			</div>
 
-				</div>
+  				</div>
   			</div>
   			<div class="row" id="writing">
   				
@@ -613,7 +612,7 @@
 
 				</div>
   			</div>
-
+      
   		</div>
   	</div>
 
