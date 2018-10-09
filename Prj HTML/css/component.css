@@ -256,3 +256,45 @@ a.icon-sort-down:hover{
 	width: 100px;
 }
 /*image-item*/
+
+.sticky {
+  position: fixed;
+  top: 35%;
+  right: 0;
+  z-index: 1;
+}
+.sticky a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.wish{
+	background-color: #E03D3A;
+	color: white;
+}
+.cart{
+	background-color: #3a79bd;
+	color: white;
+}
+.compare{
+	background-color: #3abd7e;
+	color: white;
+}
+.wish:hover{
+	background-color: white;
+	color: #E03D3A ;
+	text-decoration: none;
+}
+.cart:hover{
+	background-color: white;
+	color: #3a79bd ;
+	text-decoration: none;
+}
+.compare:hover{
+	background-color: white;
+	color: #3abd7e ;
+	text-decoration: none;
+}
