@@ -24,7 +24,9 @@
   <script type="text/javascript" src="js/ShrinkNavOnScroll.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.min.js">
-  <link rel="stylesheet" type="text/css" href="./css/about-us.css>
+  <link rel="stylesheet" type="text/css" href="./css/Feedback.css">
+  <script type="text/javascript" src="./js/feedback.js"></script>
+
 </head>
 <body ng-app="myModule" ng-controller="myController">
   <!-- Navigation -->
@@ -432,13 +434,43 @@
     </div>
 
 <!--feed back -->
- <div class="my-6">
-    
-
-    
+ <div class="mt-6 container jumbotron alert alert-success">
+    <form class="form-horizontal" action="#" method="post" name="formone" onsubmit="return feedback()">
+    <!-- Name input-->
+        <div class="form-group">
+                <label class="" for="name" >Full Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+         </div> 
+    <!-- Email input-->
+            <div class="form-group">
+              <label class="control-label" for="email">Your E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+            </div>
+    <!-- Message body -->
+            <div class="form-group">
+                
+              <label class=" control-label" for="message">Your message</label>
+              <div class="">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your feedback here..." rows="5"></textarea>
+              </div>
+            </div>
+      <!-- Rating -->
+              <div class="form-group text-center">
+                  <h1 >Your rating</h1>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+              </div> 
+      <!-- Form actions -->
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary btn-md">Submit</button>
+                <button type="reset" class="btn btn-default btn-md">Clear</button>
+              </div>
+        </form>
 </div>
-
- <!--feed back --> 
+<!--feed back --> 
   <!-- footer -->
   <div class="footer">
     <div class="bg-dark">
