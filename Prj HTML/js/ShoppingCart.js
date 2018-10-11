@@ -145,6 +145,7 @@ var app = angular.module("myModule", [])
                     type: 'DESK ORGANIZATION',
                     name: 'iTouchless SoftStep',
                     price: 79.99,
+                    sale: 30,
                     qty: 1,
                     image: 'iTouchless SoftStep cover.jpg',
                     image1: 'iTouchless SoftStep 1.jpg',
