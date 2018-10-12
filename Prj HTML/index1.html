@@ -435,16 +435,21 @@
         <h2>HOT DEALS</h2>
       </div>
       <div class="row">
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
           <div ng-repeat="product in products | filter: id = 16">
             <div class="card text-center">
-              <a href="#"><img class="card-img-top p-3" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
+              <a href="#">
+                <span class="sale_count"><span class="bf_">- 
+                {{product.sale}}%
+                </span></span>
+                <img class="card-img-top p-3" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
               <div class="quickview">
                  <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
               </div>
               <div class="card-body">
                   <p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
-                  <h6>{{product.price                                  | currency}}</h6>
+                  <h3 class="d-inline mr-2 ">{{(product.price * (100 - product.sale) / 100) | currency}}</h3>
+                  <del class="text-muted">{{product.price | currency}}</del>
               </div>
               <div class="card-footer d-flex justify-content-center">
                   <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
@@ -452,10 +457,15 @@
                   <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
               </div>
             </div>
+          </div>
         </div>
+        <div class="col-md-8 col-sm-12">
+          
         </div>
       </div>
     </div>
+
+
 	<script>
             $(document).ready(function() {
               $('.owl-carousel').owlCarousel({

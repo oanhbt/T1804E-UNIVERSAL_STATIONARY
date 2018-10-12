@@ -324,3 +324,37 @@ ul .dropdown-menu li:hover{
 	background-color: #FFFFFFFF;
 	border: 1px solid #3abd7e;
 }
+
+
+.notify-badge{
+    position: absolute;
+    background: #E62F18FF;
+    height:3rem;
+    top:-10px;
+    left:-10px;
+    width:3rem;
+    text-align: center;
+    line-height: 3rem;;
+    font-size: 1rem;
+    border-radius: 50%;
+    color:white;
+}
+.sale_count {
+    position: absolute;
+    z-index: 8;
+    display: inline-block;
+    width: 75px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: #E03D3A;
+    color: #fff;
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+}
+.sale_count .bf_ {
+    position: relative;
+    display: block;
+}
