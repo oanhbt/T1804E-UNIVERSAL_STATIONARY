@@ -14,7 +14,7 @@
 
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
-  <script type="text/javascript" src="js/ShoppingCart.js"></script>
+  <script type="text/javascript" src="js/ShoppingCart.js?123"></script>
   <script type="text/javascript" src="js/demo.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.carousel.css">
@@ -434,21 +434,23 @@
       <div class="text-center">
         <h2>HOT DEALS</h2>
       </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-12">
+      <div class="row pt-4">
+        <div class="col-lg-4 col-xs-12 mb-4">
           <div ng-repeat="product in products | filter: id = 16">
-            <div class="card text-center">
+            <div class="card text-center ">
               <a href="#">
-                <span class="sale_count"><span class="bf_">- 
-                {{product.sale}}%
-                </span></span>
-                <img class="card-img-top p-3" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
+                <span class="sale_count">
+                  <span class="bf_">- 
+                    {{product.sale}}%
+                  </span>
+                </span>
+                <img class="card-img-top p-3 mh-cardbody" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
               <div class="quickview">
                  <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
               </div>
               <div class="card-body">
                   <p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
-                  <h3 class="d-inline mr-2 ">{{(product.price * (100 - product.sale) / 100) | currency}}</h3>
+                  <h3 class="d-inline mr-2 text-danger">{{(product.price * (100 - product.sale) / 100) | currency}}</h3>
                   <del class="text-muted">{{product.price | currency}}</del>
               </div>
               <div class="card-footer d-flex justify-content-center">
@@ -459,8 +461,35 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8 col-sm-12">
-          
+        <div class="col-lg-8  col-xs-12">
+          <div class="d-flex flex-wrap align-content-start text-center">
+            <div class="col-6 col-md-4 col-lg-4 mb-5" ng-repeat="product in products | filter: {sale1 : 'true'}">
+              <div class="card">
+                  <span class="sale_count1">
+                    <span class="bf_">- 
+                      {{product.sale}}%
+                    </span>
+                  </span>
+                <a href="#">
+                  <img class="card-img-top pt-3 w-40" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}">
+                </a>
+                <div class="quickview">
+                  <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                </div>
+                <div class="card-body">
+                  <p class="card-link mh-card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
+                  <h4 class="d-inline mr-2 text-danger">{{(product.price * (100 - product.sale) / 100) | currency}}</h4>
+                  <del class="text-muted">{{product.price | currency}}</del>
+                </div>
+                <div class="card-footer d-flex justify-content-center">
+                  <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+                  <button class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart" ng-click="addItem(product)"></button>
+                  <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
