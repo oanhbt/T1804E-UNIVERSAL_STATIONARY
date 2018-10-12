@@ -8,10 +8,10 @@
 h3{
 	margin-bottom: 0px !important;
 }
-.col-4{
+/*.col-4{
 	padding-right: 0px !important;
 	padding-left: 0px !important;
-}
+}*/
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255) !important;
 }
@@ -149,7 +149,7 @@ a.gplus:hover{
 /*carosel*/
 .carousel-inner .carousel-item img{
 	width: 100%;
-	height: 550px;
+	height: auto;
 }
 .carousel-caption1{
 	font-family: 'Oswald';
@@ -297,4 +297,30 @@ a.icon-sort-down:hover{
 	background-color: white;
 	color: #3abd7e ;
 	text-decoration: none;
+}
+
+ul .dropdown-menu li:hover{
+	background-color: #E0E0E0FF;
+}
+
+.services-ship{
+	background-color: #E03D3A;
+}
+.services-ship:hover{
+	background-color: #FFFFFFFF;
+	border: 1px solid #E03D3A;
+}
+.services-check{
+	background-color: #3a79bd;
+}
+.services-check:hover{
+	background-color: #FFFFFFFF;
+	border: 1px solid #3a79bd;
+}
+.services-save{
+	background-color: #3abd7e;
+}
+.services-save:hover{
+	background-color: #FFFFFFFF;
+	border: 1px solid #3abd7e;
 }
