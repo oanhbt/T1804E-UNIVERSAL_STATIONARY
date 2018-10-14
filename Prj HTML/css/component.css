@@ -392,3 +392,12 @@ ul .dropdown-menu li:hover{
     background-repeat: no-repeat;
     padding: 30px 0px;
  }
+
+ .rating{
+	color: yellow;
+  line-height:32px;
+  font-size:1em;
+}
+ul.intro-product{
+	list-style: disc inside;
+}

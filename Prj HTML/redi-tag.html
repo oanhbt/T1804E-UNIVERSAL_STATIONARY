@@ -224,7 +224,7 @@
       </div>
     </div>
 
-  <!-- The Modal -->
+  <!-- The Modal view -->
   <div class="modal fade" id="myModal-view"  ng-repeat="product in products | filter: {name: 'Redi-Tag'}">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -271,7 +271,7 @@
                 <hr>
                 <div class="row">
                   <button class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
-                  <a href="redi-tag.html" class="mx-auto"><button class="btn btn-outline-dark" > GO TO PRODUCT</button></a>
+                  <button class="btn btn-outline-dark mx-auto" > GO TO PRODUCT</button>
                 </div>
                 
               </div>
@@ -287,283 +287,90 @@
       </div>
     </div>
   </div>
- 
-        <script>
-            $('#zoom_01').elevateZoom({
-            cursor: "pointer",
-            imageCrossfade: true,
-            zoomWindowFadeIn: 500,
-            zoomWindowFadeOut: 750
-           }); 
-        </script>
+  
+  <div class="my-6"  ng-repeat="product in products | filter: {name: 'Redi-Tag'}">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="product.html">Product</a></li>
+        <li class="breadcrumb-item active">Redi-Tag</li>
+      </ul>
 
-  <!-- carosel -->
-	<div class="mt-6">
-		<div class="container-fluid p-0 ">
-			
-			<div id="demo" class="carousel slide" data-ride="carousel">
-
-			  <!-- Indicators -->
-			  <ul class="carousel-indicators">
-			    <li data-target="#demo" data-slide-to="0" class="active"></li>
-			    <li data-target="#demo" data-slide-to="1"></li>
-			    <li data-target="#demo" data-slide-to="2"></li>
-			    <li data-target="#demo" data-slide-to="3"></li>
-			    <li data-target="#demo" data-slide-to="4"></li>
-			  </ul>
-			  
-			  <!-- The slideshow -->
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img src="imgs/carosel/carosel_5.png" alt="1">
-			      <div class="carousel-caption text-dark d-none d-md-block">
-			      	<h4>It's the best time of year!</h4>
-			      	<h1>Happy VietNamese Women's day</h1>
-			      	<h3 class="text-uppercase mb-5">Get up to 70% off</h3>
-					<button type="button" class="btn btn-outline-dark">SHOP NOW</button>
-			      </div>
-			    </div>
-			    <div class="carousel-item">
-			      <img src="imgs/carosel/carosel_3.jpg" alt="2">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="imgs/carosel/carosel_4.png" alt="3">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="imgs/carosel/carosel_2.jpg" alt="4">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="imgs/carosel/carosel_1.jpg" alt="5">
-			    </div>
-			  </div>
-			  
-			  <!-- Left and right controls -->
-			  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-			    <span class="carousel-control-prev-icon"></span>
-			  </a>
-			  <a class="carousel-control-next" href="#demo" data-slide="next">
-			    <span class="carousel-control-next-icon"></span>
-			  </a>
-			</div>
-			
-		</div>
-	</div>
-  <!-- carosel -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-4 col-lg-12 py-4">
-        <div class="services-ship p-3 clearfix rounded">
-          <div class="float-left py-3">
-            <img src="imgs/services/car_srv.png">
+      <div class="row">
+        <div class="col-xl-4 col-lg-12 py-4">
+          <div class="services-ship p-3 clearfix rounded">
+            <div class="float-left py-3">
+              <img src="imgs/services/car_srv.png">
+            </div>
+            <div class="float-right py-3">
+              <h5>FREE SHIPPING</h5>
+              <span>On All Orders Of USD $99</span>
+            </div>
           </div>
-          <div class="float-right py-3">
-            <h5>FREE SHIPPING</h5>
-            <span>On All Orders Of USD $99</span>
+        </div>
+        <div class="col-xl-4 col-lg-12 py-4">
+          <div class="services-check p-3 clearfix rounded">
+            <div class="float-left py-3">
+              <img src="imgs/services/check_srv.png">
+            </div>
+            <div class="float-right py-3">
+              <h5>24/7 CUSTOMER SERVICE</h5>
+              <span>Get Help When You Need It.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-12 py-4">
+          <div class="services-save p-3 clearfix rounded">
+            <div class="float-left py-3">
+              <img src="imgs/services/save_srv.png">
+            </div>
+            <div class="float-right py-3">
+              <h5>100% MONEY BACK</h5>
+              <span>30 Day Money Back Guarantee.</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-12 py-4">
-        <div class="services-check p-3 clearfix rounded">
-          <div class="float-left py-3">
-            <img src="imgs/services/check_srv.png">
-          </div>
-          <div class="float-right py-3">
-            <h5>24/7 CUSTOMER SERVICE</h5>
-            <span>Get Help When You Need It.</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-lg-12 py-4">
-        <div class="services-save p-3 clearfix rounded">
-          <div class="float-left py-3">
-            <img src="imgs/services/save_srv.png">
-          </div>
-          <div class="float-right py-3">
-            <h5>100% MONEY BACK</h5>
-            <span>30 Day Money Back Guarantee.</span>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="text-center">
-          <h2>
-            BEST SELLING
-          </h2>
-    </div>
-    <ul class="nav nav-tabs justify-content-center pt-4" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#paper">Paper</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" data-toggle="tab" href="#writing">Writing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#desk">Desk Organization</a>
-      </li>
-    </ul>
-
-        <!-- Tab panes -->
-    <div class="tab-content">
-            <div id="paper" class="container tab-pane active"><br>
-              <div class="row">
-                       <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                          <div class="owl-stage-outer">
-                             <div class="owl-stage">
-                                <div class="owl-item" ng-repeat="product in products | filter: type = 'paper'">
-                                   <div class="card text-center">
-                                      <a href="#"><img class="card-img-top p-3" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
-                                      <div class="quickview">
-                                         <a href="#" class="btn btn-dark float-right" title="Quickview" data-toggle="modal" data-target="#myModal-view"> Quickview</a>
-                                      </div>
-                                      <div class="card-body">
-                                         <p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
-                                         <h6>{{product.price                                  | currency}}</h6>
-                                      </div>
-                                      <div class="card-footer d-flex justify-content-center">
-                                         <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
-                                         <button class="btn btn-outline-dark mx-auto shopping-cart add-cart text-lg" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
-                                         <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
-                                      </div>
-                                   </div>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
+      <div class="row">
+            <div class="col-lg-4 col-12">
+              <img class="w-100" ng-href="" ng-src="imgs/images/Redi-Tag Cover.jpg">
             </div>
-            <div id="writing" class="container tab-pane fade"><br>
-              <div class="row">
-                       <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                          <div class="owl-stage-outer">
-                             <div class="owl-stage">
-                                <div class="owl-item" ng-repeat="product in products | filter: type = 'writing'">
-                                   <div class="card text-center">
-                                      <a href="#"><img class="card-img-top p-3" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
-                                      <div class="quickview">
-                                         <a href="#" class="btn btn-dark float-right" title="Quickview" data-toggle="modal" data-target="#myModal-view"> Quickview</a>
-                                      </div>
-                                      <div class="card-body">
-                                         <p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
-                                         <h6>{{product.price                                  | currency}}</h6>
-                                      </div>
-                                      <div class="card-footer d-flex justify-content-center">
-                                         <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
-                                         <button class="btn btn-outline-dark mx-auto shopping-cart add-cart text-lg" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
-                                         <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
-                                      </div>
-                                   </div>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
+            <div class="col-lg-8 col-12">
+              <div>
+                <div class="row">
+                  <h5 class="mx-4 d-block w-100">{{product.name}}</h5>
+                  <div class="rating mx-4">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-empty"></i>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <h3 class="text-danger mx-4">{{product.price | currency}}</h3>
+                  <p class="text-info ml-auto mx-5">Availability: In stock</p>
+                </div>
+                <hr>
+                <div class="row">
+                  <ul class="mx-4 intro-product">
+                    <li>4 x 6 inch ruled notes with tabs, 60 notes</li>
+                    <li>Leave a note while you index</li>
+                    <li>Special binding allows you to flip to the color you need while organizing</li>
+                    <li>Write on, reposition and removes cleanly without sticky residue</li>
+                    <li>Uses water based, opposed to chemical based adhesive</li>
+                  </ul>
+                </div>
+                <hr>
+                
+              </div>
             </div>
-            <div id="desk" class="container tab-pane fade"><br>
-              <div class="row">
-                       <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                          <div class="owl-stage-outer">
-                             <div class="owl-stage">
-                                <div class="owl-item" ng-repeat="product in products | filter: type = 'desk organization'">
-                                   <div class="card text-center">
-                                      <a href="#"><img class="card-img-top p-3" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
-                                      <div class="quickview">
-                                         <a href="#" class="btn btn-dark float-right" title="Quickview" data-toggle="modal" data-target="#myModal-view"> Quickview</a>
-                                      </div>
-                                      <div class="card-body">
-                                         <p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
-                                         <h6>{{product.price                                  | currency}}</h6>
-                                      </div>
-                                      <div class="card-footer d-flex justify-content-center">
-                                         <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
-                                         <button class="btn btn-outline-dark mx-auto shopping-cart add-cart text-lg" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
-                                         <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
-                                      </div>
-                                   </div>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-            </div>
+          </div>
     </div>
   </div>
 
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-6">
-          <img class="w-100" src="imgs/banner/banner_1n_1.jpg">
-        </div>
-        <div class="col-6">
-          <img class="w-100" src="imgs/banner/banner_1n_2.jpg">
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="text-center">
-        <h2>HOT DEALS</h2>
-      </div>
-      <div class="row pt-4">
-        <div class="col-lg-4 col-xs-12 mb-4">
-          <div ng-repeat="product in products | filter: id = 16">
-            <div class="card text-center ">
-              <a href="#">
-                <span class="sale_count">
-                  <span class="bf_">- 
-                    {{product.sale}}%
-                  </span>
-                </span>
-                <img class="card-img-top p-3 mh-cardbody" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
-              <div class="quickview">
-                 <a href="#" class="btn btn-dark float-right" title="Quickview" data-toggle="modal" data-target="#myModal-view"> Quickview</a>
-              </div>
-              <div class="card-body">
-                  <p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
-                  <h3 class="d-inline mr-2 text-danger">{{(product.price * (100 - product.sale) / 100) | currency}}</h3>
-                  <del class="text-muted">{{product.price | currency}}</del>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                  <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
-                  <button class="btn btn-outline-dark mx-auto shopping-cart add-cart" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
-                  <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8  col-xs-12">
-          <div class="d-flex flex-wrap align-content-start text-center">
-            <div class="col-6 col-md-4 col-lg-4 mb-1" ng-repeat="product in products | filter: {sale1 : 'true'}">
-              <div class="card">
-                  <span class="sale_count1">
-                    <span class="bf_">- 
-                      {{product.sale}}%
-                    </span>
-                  </span>
-                <a href="#">
-                  <img class="card-img-top pt-3 w-40" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}">
-                </a>
-                <div class="quickview">
-                  <a href="#" class="btn btn-dark float-right" title="Quickview" data-toggle="modal" data-target="#myModal-view"> Quickview</a>
-                </div>
-                <div class="card-body">
-                  <p class="card-link mh-card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
-                  <h4 class="d-inline mr-2 text-danger">{{(product.price * (100 - product.sale) / 100) | currency}}</h4>
-                  <del class="text-muted">{{product.price | currency}}</del>
-                </div>
-                <div class="card-footer d-flex justify-content-center">
-                  <a class="btn btn-outline-dark icon-like" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
-                  <button class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart" ng-click="addItem(product)"></button>
-                  <a href="compare.html" class="btn btn-outline-dark icon-compare" title="Add to Compare"></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="section-brand">
       <div class="container ">
         <div class="row">
