@@ -437,21 +437,23 @@
  <div class="mt-6 container jumbotron alert alert-success">
   <h1 class="alert alert-success text-center">Feedback</h1>
     <form class="form-horizontal" action="#" method="post" name="formone" onsubmit="return feedback()">
+    <div class="row">
     <!-- Name input-->
-        <div class="form-group">
+        <div class="form-group col-md-4">
                 <label class="" for="name" >Full Name</label>
                   <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
          </div> 
     <!-- Email input-->
-            <div class="form-group">
+            <div class="form-group col-md-4">
               <label class="control-label" for="email">Your E-mail</label>
                 <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
             </div>
-    <!--  Phone
-           <div class="form-group">
+    <!-- Phone -->
+           <div class="form-group col-md-4">
              <label class="control-label" for="phone">Your Phone</label>
                <input id="phone" name="phone" type="text" placeholder="Your Phone" class="form-control">
-           </div> -->
+           </div>
+      </div>
     <!-- Message body -->
             <div class="form-group">
                 
