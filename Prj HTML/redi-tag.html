@@ -16,6 +16,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
   <script type="text/javascript" src="js/ShoppingCart.js?123"></script>
   <script type="text/javascript" src="js/demo.js"></script>
+  <script type="text/javascript" src="js/rating.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.theme.default.min.css">
@@ -367,7 +368,168 @@
                 
               </div>
             </div>
-          </div>
+      </div>
+
+
+
+    <ul class="nav nav-tabs pt-4" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#details">DETAILS</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" data-toggle="tab" href="#reviews">REVIEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" data-toggle="tab" href="#costomTab">Additional Information</a>
+      </li>
+    </ul>
+
+        <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="details" class="container tab-pane active">
+        <h4>
+          Technical Details
+        </h4>
+        <table class="table table-bordered table-striped">
+          <tbody>
+            <tr>
+              <td>Brand Name</td>
+              <td>Redi-Tag</td>
+            </tr>
+            <tr>
+              <td>Item Weight</td>
+              <td>0.32 ounces</td>
+            </tr>
+            <tr>
+              <td>Product Dimensions</td>
+              <td>7.8 x 0.4 x 4.2 inches</td>
+            </tr>
+            <tr>
+              <td>Item model number</td>
+              <td>29500</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td>Assorted</td>
+            </tr>
+            <tr>
+              <td>Number of Items</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td>1 Pack</td>
+            </tr>
+            <tr>
+              <td>Ruling</td>
+              <td>Plain</td>
+            </tr>
+            <tr>
+              <td>Sheet Size</td>
+              <td>4-x-6-inch</td>
+            </tr>
+            <tr>
+              <td>Manufacturer Part Number</td>
+              <td>29500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="reviews" class="container tab-pane">
+        <div class="text-muted">
+          <h6>Your Rating</h6>
+          <p>Rating</p>
+          <section class='w-50'>
+  
+            <!-- Rating Stars Box -->
+            <div class='rating-stars'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+            </div>
+            
+            <div class='success-box '>
+              <div class='clearfix'></div>
+              <div class='text-message'></div>
+              <div class='clearfix'></div>
+            </div>
+            
+            <form id="contact-form" name="contact-form">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form mb-0">
+                              <label for="name" class="">Nickname</label>
+                              <input type="text" id="name" name="name" class="form-control">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form mb-0">
+                              <label for="subject" class="">Summary</label>
+                              <input type="text" id="subject" name="subject" class="form-control">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form">
+                              <label for="message">Review</label>
+                              <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="btn-outline-dark mt-3">SUBMIT REVIEW</button>
+              </form>
+            
+          </section>
+        </div>
+        
+      </div>
+      <div id="costomTab" class="container tab-pane">
+        <h4>
+          Additional Information
+        </h4>
+        <table class="table table-bordered table-striped">
+          <tbody>
+            <tr>
+              <td>ASIN</td>
+              <td>B00ED3GU1I</td>
+            </tr>
+            <tr>
+              <td>Shipping Weight</td>
+              <td>2.4 ounces</td>
+            </tr>
+            <tr>
+              <td>Domestic Shipping</td>
+              <td>Item can be shipped within U.S.</td>
+            </tr>
+            <tr>
+              <td>International Shipping</td>
+              <td>This item can be shipped to select countries outside of the U.S</td>
+            </tr>
+            <tr>
+              <td>Date First Available</td>
+              <td>March 30, 2011</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     </div>
   </div>
 
