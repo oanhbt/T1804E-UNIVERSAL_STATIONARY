@@ -261,7 +261,7 @@ a.icon-sort-down:hover{
   position: fixed;
   top: 35%;
   right: 0;
-  z-index: 1;
+  z-index: 9;
 }
 .sticky a {
   display: block;
@@ -323,4 +323,81 @@ ul .dropdown-menu li:hover{
 .services-save:hover{
 	background-color: #FFFFFFFF;
 	border: 1px solid #3abd7e;
+}
+
+
+.notify-badge{
+    position: absolute;
+    background: #E62F18FF;
+    height:3rem;
+    top:-10px;
+    left:-10px;
+    width:3rem;
+    text-align: center;
+    line-height: 3rem;;
+    font-size: 1rem;
+    border-radius: 50%;
+    color:white;
+}
+.sale_count {
+    position: absolute;
+    z-index: 8;
+    display: inline-block;
+    width: 75px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: #E03D3A;
+    color: #fff;
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+}
+.sale_count1 {
+    position: absolute;
+    z-index: 8;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: #E03D3A;
+    color: #fff;
+    font-family: 'Gotham', sans-serif;
+    font-size: 13px;
+}
+.sale_count .bf_ {
+    position: relative;
+    display: block;
+}
+.mh-card-link{
+	min-height: 50px !important;
+}
+.w-40 {
+  width: 40% !important;
+}
+.w-110 {
+  width: 110% !important;
+}
+/*.mh-cardbody{
+	min-height: 560px !important;
+}*/
+
+.section-brand {
+    background-image: url(../imgs/supplier/background_brand.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0px;
+ }
+
+ .rating{
+	color: yellow;
+  line-height:32px;
+  font-size:1em;
+}
+ul.intro-product{
+	list-style: disc inside;
 }
