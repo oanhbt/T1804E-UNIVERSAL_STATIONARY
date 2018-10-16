@@ -335,33 +335,39 @@
     </div>
 
 			<div class="row">
-        <div class="col-2">
+        <div class="col-3">
             
         </div>
-				<div class="col-10 clearfix">
-					<form class="form-inline float-left">
-						<div class="input-group">
-						<label>Sort By</label>
-						  <select name="sort-by" class="custom-select ml-3">
-						    <option value="position">Position</option>
-						    <option value="name">Product Name</option>
-						    <option value="price">Price</option>
-						  </select>
-						</div>
-						<a href="#" class="icon-sort-down"></a>
-					</form>
-					<form class="form-inline float-right">
-						<div class="input-group">
-						<label>Show</label>
-						  <select name="sort-by" class="custom-select ml-3">
-						    <option value="position" selected>12</option>
-						    <option value="name">24</option>
-						    <option value="price">36</option>
-						  </select>
-						</div>
-						<a href="#" class="icon-grid" title="Grid"></a>
-						<a href="#" class="icon-list" title="List"></a>
-					</form>
+				<div class="col-9">
+          <div class="row">
+            <div class="col-6">
+              <form class="form-inline">
+                <div class="input-group">
+                <label>Sort By</label>
+                  <select name="sort-by" class="custom-select ml-3">
+                    <option value="position">Position</option>
+                    <option value="name">Product Name</option>
+                    <option value="price">Price</option>
+                  </select>
+                </div>
+                <a href="#" class="icon-sort-down"></a>
+              </form>
+            </div>
+            <div class="col-6">
+              <form class="form-inline float-right">
+                <div class="input-group">
+                  <label>Show</label>
+                  <select name="sort-by" class="custom-select ml-3">
+                    <option value="position" selected>12</option>
+                    <option value="name">24</option>
+                    <option value="price">36</option>
+                  </select>
+                </div>
+                <a href="#" class="icon-grid" title="Grid"></a>
+                <a href="#" class="icon-list" title="List"></a>
+              </form>
+            </div>
+          </div>
 				</div>
 			</div>
 
@@ -381,11 +387,28 @@
           </div>
           <div>
             <p>
-              <label for="amount" class="d-inline"><h5>Price:</h5></label>
-              <input type="text" class="price-text d-inline w-25" id="amount" readonly>
+              <label for="amount"><h5>Price:</h5></label>
+              <input type="text" class="price-text" id="amount" readonly>
             </p>
              
             <div id="slider-range"></div>
+          </div>
+          <div class="mt-5">
+              <form>
+                <div class="form-group">
+                  <label for="supplier">Supplier:</label>
+                  <select class="form-control" id="supplier" name="sellist1">
+                    <option>ALL</option>
+                    <option>STAPLES</option>
+                    <option>AT-AGLANCE</option>
+                    <option>OOMA</option>
+                    <option>OXFORD</option>
+                    <option>PAPER MATE</option>
+                    <option>PILOT</option>
+                    <option>3M</option>
+                  </select>
+                </div>
+              </form>
           </div>
         </div>
 
@@ -394,8 +417,8 @@
                 $( "#slider-range" ).slider({
                   range: true,
                   min: 0,
-                  max: 20,
-                  values: [ 3, 17 ],
+                  max: 25,
+                  values: [ 3, 20 ],
                   slide: function( event, ui ) {
                     $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
                   }
@@ -412,7 +435,7 @@
                 <div class="card">
                   <a href="#"><img class="card-img-top pt-3" ng-src="imgs/images/{{product.image}}" alt="{{product.name}}" title="{{product.name}}"></a>
                   <div class="quickview">
-                    <a href="#" class="btn btn-dark float-right" title="Quickview"> Quickview</a>
+                    <a href="#" class="btn btn-dark float-right" title="Quickview" data-toggle="modal" data-target="#myModal-view"> Quickview</a>
                   </div>
                   <div class="card-body">
                     <p class="card-link"><a href="#" class="text-dark">{{product.name}}</a></p>
