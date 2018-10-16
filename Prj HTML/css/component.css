@@ -444,3 +444,10 @@ ul.intro-product{
 .rating-stars ul > li.star.selected > i.fa {
   color:#FF912C;
 }
+
+
+.price-text{
+	border:0; 
+	color:#f6931f; 
+	font-weight:bold;
+}
