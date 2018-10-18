@@ -218,77 +218,14 @@
         
         <!-- Modal footer -->
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary">Checkout</button>
+              <a href="checkout.html" class="btn btn-secondary">Checkout</a>
             </div>
         
           </div>
       </div>
     </div>
 
-  <!-- The Modal view -->
-  <div class="modal fade" id="myModal-view"  ng-repeat="product in products | filter: {name: 'Redi-Tag'}">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          
-          <div class="row">
-            <div class="col-lg-6 col-12">
-              <img class="w-100" ng-href="" ng-src="imgs/images/Redi-Tag Cover.jpg">
-            </div>
-            <div class="col-lg-6 col-12">
-              <div>
-                <div class="row">
-                  <h5 class="mx-4 d-block w-100">{{product.name}}</h5>
-                  <div class="rating mx-4">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-empty"></i>
-                  </div>
-                </div>
-                <hr>
-                <div class="row">
-                  <h3 class="text-danger mx-4">{{product.price | currency}}</h3>
-                  <p class="text-info ml-auto mx-5">Availability: In stock</p>
-                </div>
-                <hr>
-                <div class="row">
-                  <ul class="mx-4 intro-product">
-                    <li>4 x 6 inch ruled notes with tabs, 60 notes</li>
-                    <li>Leave a note while you index</li>
-                    <li>Special binding allows you to flip to the color you need while organizing</li>
-                    <li>Write on, reposition and removes cleanly without sticky residue</li>
-                    <li>Uses water based, opposed to chemical based adhesive</li>
-                  </ul>
-                </div>
-                <hr>
-                <div class="row">
-                  <button class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
-                  <button class="btn btn-outline-dark mx-auto" > GO TO PRODUCT</button>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
+ 
   <div class="my-6"  ng-repeat="product in products | filter: {name: 'Redi-Tag'}">
     <div class="container">
       <ul class="breadcrumb">
@@ -366,6 +303,11 @@
                 </div>
                 <hr>
                 
+                <div class="row">
+                  <button class="btn btn-outline-dark mx-auto" >ADD TO WISHLIST</button>
+                  <button class="btn btn-outline-dark shopping-cart" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
+                  <button class="btn btn-outline-dark mx-auto" >ADD TO COMPARE</button>
+                </div>
               </div>
             </div>
       </div>
@@ -638,7 +580,7 @@
                   <ul>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="FeedBack.html">Feedback</a></li>
                     <li><a href="job.html">Job</a></li>
                   </ul>
                 </div>
