@@ -11,292 +11,86 @@
 
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/component.css">
-  <link rel="stylesheet" type="text/css" href="css/mega-menu.css">
+
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
-  <script type="text/javascript" src="js/ShoppingCart.js"></script>
+  <script type="text/javascript" src="js/ShoppingCart.js?123"></script>
   <script type="text/javascript" src="js/demo.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.theme.default.min.css">
   <script type="text/javascript" src="css/owlcarousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/ShrinkNavOnScroll.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/ShrinkNavOnScroll.css">
-  <script type="text/javascript" src="js/ShrinkNavOnScroll.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.min.js">
 </head>
 <body ng-app="myModule" ng-controller="myController">
   <!-- Navigation -->
+
+    <div class="sticky">
+        <a class="icon-like wish" href="#" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+
+        <a class="icon-cart cart" href="#" data-toggle="modal" data-target="#myModal-cart"></a>
+
+        <a class="icon-compare compare" href="compare.html" title="Add to Compare"></a>
+
+    </div>
+
   <div class="fixed-top navbar navbar-light bg-light navbar-static-top navbar-expand-lg">
       <div class="container">
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">☰</button>
-                  <a class="navbar-brand" href="#">
-                    <strong>FPT STATIONARY</strong>
-                  </a>
+          <a class="navbar-brand" href="#">
+            <strong>FPT STATIONARY</strong>
+          </a>
           <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav m-auto">
-                  <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-                  <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">SUPPLIERS</a>
-                      <ul class="dropdown-menu megamenu">
-                          <li class="dropdown-item">
-                              <div class="row">
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                        <img src="imgs/supplier/3M_BW_CA_logo._SR680,295_.jpg">
-                                      </a>
-                                  </div>
-                              </div>
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                          <img src="imgs/supplier/AT-A-GLANCE_us_office_logotiles_680x295._CB487521057_.jpg">
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                        <img src="imgs/supplier/OOMA_us_office_logotiles_680x295.jpg">
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                          <img src="imgs/supplier/OXFORD_us_office_logotiles_680x295.jpg">
-                                      </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row mt-3">
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                        <img src="imgs/supplier/papermate_BW_CA_logo._CB486705712_.jpg">
-                                      </a>
-                                  </div>
-                              </div>
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                          <img src="imgs/supplier/pilot_BW_CA_logo._CB486705713_.jpg">
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                        <img src="imgs/supplier/prsimacolor_BW_CA_logo._CB486705712_.jpg">
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                          <img src="imgs/supplier/sharpie_BW_CA_logo._CB486705712_.jpg">
-                                      </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row mt-3">
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                        <img src="imgs/supplier/swingline_BW_CA_logo._CB486705712_.jpg">
-                                      </a>
-                                  </div>
-                              </div>
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                          <img src="imgs/supplier/XCM_1105301_Manual_670x250_1105301_us_officeproducts_brand_670x250_jpg_Shop_by_brand_Mead_LOGO._SR680,295_.jpg">
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                        <img src="imgs/supplier/hp.png">
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-6 col-xl-3 text-center">
-                                    <div class="card">
-                                      <a href="#" class="thumbnail">
-                                          <img src="imgs/supplier/casio.jpg">
-                                      </a>
-                                  </div>
-                                </div>
-                              </div>
-                          </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    PRODUCTS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="paper.html">Paper</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="writing.html">Writing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="desk-organization.html">Desk Organization</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item disabled" href="#">Boxes & Storage</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item disabled" href="#">CALENDARS & PLANNERS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item disabled" href="#">EDUCATION & CRAFTS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item disabled" href="#">NOTEBOOKS & PADS</a>
+                    </li>
                   </ul>
                 </li>
-                <li class="dropdown menu-large nav-item"><a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">CATEGORIES</a>
-                    <ul class="dropdown-menu megamenu">
-                        <div class="row">
-                          <li class="col-md-6 col-xl-3 dropdown-item">
-                              <ul>
-                                  <li class="dropdown-header"><a href="#paper"><h6>PAPER</h6></a></li>
-                                  <li>
-                                    <a href="#">Notebooks & Writing Pads
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Copy & Multipurpose Paper
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Cards & Card Stock
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Laser Printer Paper</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Colored Paper</a>
-                                  </li>
-                                  <li class="divider"></li>
-                                  <li class="dropdown-header"><a href="#writing"><h6>WRITING</h6></a></li>
-                                  <li>
-                                    <a href="#">Pens & Refills</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Pencils</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Markers & Highlighters</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Erasers & Correction Products</a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li class="col-md-6 col-xl-3 dropdown-item">
-                              <ul>
-                                  <li class="dropdown-header"><a href="#desk-organization"><h6>DESK ORGANIZATION</h6></a></li>
-                                  <li>
-                                    <a href="#">Letter Trays & Stacking Supports</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Drawer Organizers</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Hanging Wall Files</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">File Folder Racks & Holders</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Office Waste Bins</a>
-                                  </li>
-                                  <li class="divider"></li>
-                                  <li class="dropdown-header"><a href="#"><h6>BOXES & STORAGE</h6></a></li>
-                                  <li>
-                                    <a href="#">Storage File Boxes</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Storage Crates</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Filing Crates & Posting Tubs</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Modular Storage Systems</a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li class="col-md-6 col-xl-3 dropdown-item">
-                              <ul>
-                                  <li class="dropdown-header"><a href="#"><h6>CALENDARS & PLANNERS</h6></a></li>
-                                  <li>
-                                    <a href="#">Wall Calendars</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Personal Organizers</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Planners, Refills & Covers</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Planning Boards</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Planning Pads</a>
-                                  </li>
-                                  <li class="divider"></li>
-                                  <li class="dropdown-header"><a href="#"><h6>EDUCATION & CRAFTS</h6></a></li>
-                                  <li>
-                                    <a href="#">Math Materials</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Arts & Crafts Supplies</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Social Studies Materials</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">School Supply Storage Boxes</a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li class="col-md-6 col-xl-3 dropdown-item">
-                              <ul>
-                                  <li class="dropdown-header"><a href="#"><h6>NOTEBOOKS & PADS</h6></a></li>
-                                  <li>
-                                    <a href="#">Hardcover Executive Notebooks</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Self-Stick Notes</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Wirebound Notebooks</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Composition Notebooks</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Subject Notebooks</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Memo & Scratch Pads</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Letter & Legal Ruled Pads</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Steno Notebooks</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Chart Tablets</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Graph & Data Pads</a>
-                                  </li>
-                              </ul>
-                          </li>
-                      </div>
-                    </ul>
-                    
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">CONTACT</a>
                 </li>
                 <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link icon-signin" href="#" data-toggle="modal" data-target="#myModal-signin">SIGN IN </a>
-            </li>
+                  <a class="nav-link" href="about-us.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link icon-signin" href="#" data-toggle="modal" data-target="#myModal-signin">SIGN IN </a>
+                </li>
               </ul>
-
-              <a href="#" class="icon-search" data-toggle="modal" data-target="#myModal"></a>
-              <div class="cart">
-                <a class="ml-4 icon-cart" href="#" data-toggle="modal" data-target="#myModal-cart"></a>
-                <span class="num-order">{{totalQty()}}</span>
-              </div>
           </div>
+          <a href="#" class="icon-search" data-toggle="modal" data-target="#myModal"></a>
       </div>
   </div>
   <!-- Navigation -->
@@ -343,7 +137,7 @@
               <div id="signin" class="container tab-pane active"><br>
                 <form>
                   <div class="form-group">
-                    <input type="email" class="form-control" id="mail" name="Email" placeholder="Email Address">
+                    <input type="text" class="form-control" id="mail" name="Email" placeholder="Username / Email Address">
                   </div>
                   <div class="form-group">
                     <input type="password" class="form-control" id="pwd" name="password" placeholder="Password">
@@ -398,7 +192,7 @@
               <table class="table table-hover">
               <tbody ng-show="carts.length > 0">
                 <tr ng-repeat="cart in carts">
-                  <td><img ng-src="imgs/images/{{cart.image}}" style="width: 100px;"></td>
+                  <td><img ng-src="imgs/images/{{cart.image}}"></td>
                   <td class="pt-4">{{cart.name}}</td>
                   <td class="pt-4">{{cart.price | currency}}</td>
                   <td class="pt-3"><input class="form-control" type="number" min="1" ng-model="cart.qty"></td>
@@ -423,13 +217,77 @@
         
         <!-- Modal footer -->
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary">Checkout</button>
             </div>
         
           </div>
       </div>
     </div>
 
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal-view"  ng-repeat="product in products | filter: {name: 'Redi-Tag'}">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <img class="w-100" ng-href="" ng-src="imgs/images/Redi-Tag Cover.jpg">
+            </div>
+            <div class="col-lg-6 col-12">
+              <div>
+                <div class="row">
+                  <h5 class="mx-4 d-block w-100">{{product.name}}</h5>
+                  <div class="rating mx-4">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-empty"></i>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <h3 class="text-danger mx-4">{{product.price | currency}}</h3>
+                  <p class="text-info ml-auto mx-5">Availability: In stock</p>
+                </div>
+                <hr>
+                <div class="row">
+                  <ul class="mx-4 intro-product">
+                    <li>4 x 6 inch ruled notes with tabs, 60 notes</li>
+                    <li>Leave a note while you index</li>
+                    <li>Special binding allows you to flip to the color you need while organizing</li>
+                    <li>Write on, reposition and removes cleanly without sticky residue</li>
+                    <li>Uses water based, opposed to chemical based adhesive</li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="row">
+                  <button class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
+                  <a href="redi-tag.html" class="mx-auto"><button class="btn btn-outline-dark" > GO TO PRODUCT</button></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+ 
 
   <div class="my-6">
     <div class="container">
