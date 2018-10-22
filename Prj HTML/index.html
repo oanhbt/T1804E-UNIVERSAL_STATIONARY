@@ -139,32 +139,32 @@
               <!-- Tab panes -->
               <div class="tab-content">
                   <div id="signin" class="container tab-pane active"><br>
-                    <form>
+                   <!--  <form name="RegForm1" onsubmit="return GEEKFORGEEKS1()" method="post">
                         <div class="form-group">
-                          <input type="text" class="form-control" id="mail" name="Email" placeholder="Username / Email Address">
+                          <input type="text" class="form-control" id="usr" name="1" placeholder="Username / Email Address">
                         </div>
                         <div class="form-group">
-                          <input type="password" class="form-control" id="pwd" name="password" placeholder="Password">
+                          <input type="password" class="form-control" id="pwd" name="1" placeholder="Password">
                         </div>
                         <div class="custom-control custom-checkbox mb-3">
                           <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
                           <label class="custom-control-label" for="customCheck">Remember Me</label>
                         </div>
-                        <button type="submit" class="btn btn-dark btn-block">Login</button>
+                        <input type="submit" value="Login" name="Submit" class="btn btn-dark btn-block">
                         <a href="#" class="mt-5">Forgot Password?</a>
-                    </form>
+                    </form> -->
                   </div>
 
                   <div id="signup" class="container tab-pane fade"><br>
-                    <form name="RegForm" onsubmit="return GEEKFORGEEKS()" method="post">
+                    <form name="form1" onsubmit="return signup()" method="post">
                         <div class="form-group">
-                          <input type="text" class="form-control" id="usr" name="Name" placeholder="Username">
+                          <input type="text" class="form-control" name="Name" placeholder="Username">
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control" id="mail" name="EMail" placeholder="Email Address">
+                          <input type="email" class="form-control" name="EMail" placeholder="Email Address">
                         </div>
                         <div class="form-group">
-                          <input type="password" class="form-control" id="pwd" name="Password" placeholder="Password">
+                          <input type="password" class="form-control" name="Password" placeholder="Password">
                         </div>
                         <input type="submit" value="REGISTER NOW" name="Submit" class="btn btn-dark btn-block">  
                     </form>
