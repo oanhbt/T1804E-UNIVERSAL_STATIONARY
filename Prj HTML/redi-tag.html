@@ -16,7 +16,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
   <script type="text/javascript" src="js/ShoppingCart.js?123"></script>
   <script type="text/javascript" src="js/demo.js"></script>
-  <script type="text/javascript" src="js/rating.js"></script>
+  <script type="text/javascript" src="js/validate-form.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.theme.default.min.css">
@@ -49,6 +49,9 @@
           </a>
           <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav m-auto">
+                <li class="d-none d-block d-lg-none">
+                    <a href="#" class="icon-search" data-toggle="modal" data-target="#myModal"></a>
+                </li>
                 <li class="nav-item">
                   <a href="index.html" class="nav-link">HOME</a>
                 </li>
@@ -67,16 +70,16 @@
                       <a class="dropdown-item" href="desk-organization.html">Desk Organization</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Boxes & Storage</a>
+                      <a class="dropdown-item disabled" href="#">Boxes & Storage</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">CALENDARS & PLANNERS</a>
+                      <a class="dropdown-item disabled" href="#">CALENDARS & PLANNERS</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">EDUCATION & CRAFTS</a>
+                      <a class="dropdown-item disabled" href="#">EDUCATION & CRAFTS</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">NOTEBOOKS & PADS</a>
+                      <a class="dropdown-item disabled" href="#">NOTEBOOKS & PADS</a>
                     </li>
                   </ul>
                 </li>
@@ -91,7 +94,7 @@
                 </li>
               </ul>
           </div>
-          <a href="#" class="icon-search" data-toggle="modal" data-target="#myModal"></a>
+          <a href="#" class="icon-search d-none d-lg-block" data-toggle="modal" data-target="#myModal"></a>
       </div>
   </div>
   <!-- Navigation -->
@@ -125,50 +128,47 @@
           <!-- Modal body -->
             <div class="modal-body">
               <ul class="nav nav-pills" role="tablist">
-              <li class="nav-item m-auto">
-                <a class="nav-link active" data-toggle="tab" href="#signin">SIGN IN</a>
-              </li>
-              <li class="nav-item m-auto">
-                <a class="nav-link" data-toggle="tab" href="#signup">SIGN UP</a>
-              </li>
-          </ul>
+                <li class="nav-item m-auto">
+                  <a class="nav-link active" data-toggle="tab" href="#signin">SIGN IN</a>
+                </li>
+                <li class="nav-item m-auto">
+                  <a class="nav-link" data-toggle="tab" href="#signup">SIGN UP</a>
+                </li>
+              </ul>
 
-            <!-- Tab panes -->
-          <div class="tab-content">
-              <div id="signin" class="container tab-pane active"><br>
-                <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="mail" name="Email" placeholder="Username / Email Address">
+              <!-- Tab panes -->
+              <div class="tab-content">
+                  <div id="signin" class="container tab-pane active"><br>
+                    <form name="form2" action="index.html" onsubmit="return signin()" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="Name" placeholder="Username / Email Address" required="">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control" name="Password" placeholder="Password" required="">
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" name="example1">
+                          <label class="custom-control-label" for="customCheck">Remember Me</label>
+                        </div>
+                        <input type="submit" value="Login" name="Submit" class="btn btn-dark btn-block">
+                        <a href="#" class="mt-5">Forgot Password?</a>
+                    </form>
                   </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" id="pwd" name="password" placeholder="Password">
+
+                  <div id="signup" class="container tab-pane fade"><br>
+                    <form name="form1" action="index.html" onsubmit="return signup()" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="Name" placeholder="Username" required="">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" name="EMail" placeholder="Email Address" required="">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control" name="Password" placeholder="Password" required="">
+                        </div>
+                        <input type="submit" value="REGISTER NOW" name="Submit" class="btn btn-dark btn-block">  
+                    </form>
                   </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                    <label class="custom-control-label" for="customCheck">Remember Me</label>
-                  </div>
-                  <button type="submit" class="btn btn-dark btn-block">Login</button>
-                  <a href="#" class="mt-5">Forgot Password?</a>
-              </form>
-                  
-              </div>
-              <div id="signup" class="container tab-pane fade"><br>
-                <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="usr" name="username" placeholder="Username">
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="mail" name="Email" placeholder="Email Address">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" id="pwd" name="password" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" id="pwd" name="password" placeholder="Confirm Password">
-                  </div>
-                  <button type="submit" class="btn btn-dark btn-block">REGISTER NOW</button>
-              </form>
-              </div>
               </div>
 
             </div>
@@ -178,6 +178,7 @@
   <!-- End Modal -->
   
   
+  <!-- The Modal cart-->
     <div class="modal fade" id="myModal-cart">
       <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
@@ -214,6 +215,7 @@
                 </tr>
               </tbody>
             </table>
+
             </div>
         
         <!-- Modal footer -->
@@ -224,6 +226,72 @@
           </div>
       </div>
     </div>
+  <!-- End Modal -->
+
+  <!-- The Modal view-->
+  <div class="modal fade" id="myModal-view"  ng-repeat="product in products | filter: {name: 'Redi-Tag'}">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <img class="w-100" ng-href="" ng-src="imgs/images/Redi-Tag Cover.jpg">
+            </div>
+            <div class="col-lg-6 col-12">
+              <div>
+                <div class="row">
+                  <h5 class="mx-4 d-block w-100">{{product.name}}</h5>
+                  <div class="rating mx-4">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-empty"></i>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <h3 class="text-danger mx-4">{{product.price | currency}}</h3>
+                  <p class="text-info ml-auto mx-5">Availability: In stock</p>
+                </div>
+                <hr>
+                <div class="row">
+                  <ul class="mx-4 intro-product">
+                    <li>4 x 6 inch ruled notes with tabs, 60 notes</li>
+                    <li>Leave a note while you index</li>
+                    <li>Special binding allows you to flip to the color you need while organizing</li>
+                    <li>Write on, reposition and removes cleanly without sticky residue</li>
+                    <li>Uses water based, opposed to chemical based adhesive</li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="row">
+                  <button class="btn btn-outline-dark mx-auto shopping-cart" title="Add to Cart" ng-click="addItem(product)"> ADD TO CART</button>
+                  <a href="redi-tag.html" class="mx-auto"><button class="btn btn-outline-dark" > GO TO PRODUCT</button></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
 
  
   <div class="my-6"  ng-repeat="product in products | filter: {name: 'Redi-Tag'}">
@@ -544,6 +612,7 @@
 	<!-- main-product -->
 
 
+
   <!-- footer -->
   <div class="footer">
     <div class="bg-dark">
@@ -554,7 +623,7 @@
             <h6 class="footer_tittle mb-3">CONTACT INFOMATION</h6>
                   <div class="footer_content text-white">
                     <p>
-                      <i class="fa fa-home mr-3"></i> <a href="">No 8, Ton That Thuyet, Ha Noi</a></p>
+                      <i class="fa fa-home mr-3"></i> <a href="contact.html">No 8, Ton That Thuyet, Ha Noi</a></p>
                     <p>
                       <i class="fa fa-envelope mr-3"></i><a href="">info@example.com</a></p>
                     <p>
@@ -629,6 +698,7 @@
     </div>
   </div>
   <!-- footer -->
+
 
 </body>
 </html>

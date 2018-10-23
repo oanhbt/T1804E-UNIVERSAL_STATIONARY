@@ -72,6 +72,59 @@ function signin()
     alert("Logged in successfully");
     return true; 
 }
+function contact()                                    
+{ 
+    var name = document.forms["form3"]["name"];
+    var email = document.forms["form3"]["email"];
+    var subject = document.forms["form3"]["subject"];
+
+   
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+    if (subject.value == "")                                  
+    { 
+        window.alert("Please enter your subject."); 
+        subject.focus(); 
+        return false; 
+    } 
+      
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+    
+    if (!validateEmail(email.value ))                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+
+   
+    alert("");
+    return true; 
+}
+
 
 function checkOut()                                    
 { 

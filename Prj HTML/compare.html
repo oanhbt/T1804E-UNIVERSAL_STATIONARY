@@ -22,7 +22,6 @@
   <link rel="stylesheet" type="text/css" href="css/owlcarousel/assets/owl.theme.default.min.css">
   <script type="text/javascript" src="css/owlcarousel/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/ShrinkNavOnScroll.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/compare.css">
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -50,7 +49,7 @@
           </a>
           <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav m-auto">
-                <li class="d-none d-md-block d-lg-none">
+                <li class="d-none d-block d-lg-none">
                     <a href="#" class="icon-search" data-toggle="modal" data-target="#myModal"></a>
                 </li>
                 <li class="nav-item">
@@ -140,32 +139,32 @@
               <!-- Tab panes -->
               <div class="tab-content">
                   <div id="signin" class="container tab-pane active"><br>
-                    <form>
+                    <form name="form2" action="index.html" onsubmit="return signin()" method="post">
                         <div class="form-group">
-                          <input type="text" class="form-control" id="mail" name="Email" placeholder="Username / Email Address">
+                          <input type="text" class="form-control" name="Name" placeholder="Username / Email Address" required="">
                         </div>
                         <div class="form-group">
-                          <input type="password" class="form-control" id="pwd" name="password" placeholder="Password">
+                          <input type="password" class="form-control" name="Password" placeholder="Password" required="">
                         </div>
                         <div class="custom-control custom-checkbox mb-3">
-                          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                          <input type="checkbox" class="custom-control-input" name="example1">
                           <label class="custom-control-label" for="customCheck">Remember Me</label>
                         </div>
-                        <button type="submit" class="btn btn-dark btn-block">Login</button>
+                        <input type="submit" value="Login" name="Submit" class="btn btn-dark btn-block">
                         <a href="#" class="mt-5">Forgot Password?</a>
                     </form>
                   </div>
 
                   <div id="signup" class="container tab-pane fade"><br>
-                    <form name="RegForm" onsubmit="return GEEKFORGEEKS()" method="post">
+                    <form name="form1" action="index.html" onsubmit="return signup()" method="post">
                         <div class="form-group">
-                          <input type="text" class="form-control" id="usr" name="Name" placeholder="Username">
+                          <input type="text" class="form-control" name="Name" placeholder="Username" required="">
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control" id="mail" name="EMail" placeholder="Email Address">
+                          <input type="email" class="form-control" name="EMail" placeholder="Email Address" required="">
                         </div>
                         <div class="form-group">
-                          <input type="password" class="form-control" id="pwd" name="Password" placeholder="Password">
+                          <input type="password" class="form-control" name="Password" placeholder="Password" required="">
                         </div>
                         <input type="submit" value="REGISTER NOW" name="Submit" class="btn btn-dark btn-block">  
                     </form>
@@ -295,6 +294,7 @@
   <!-- End Modal -->
 
 
+
 	<div class="my-6">
 		<div class="container">
 		  	<ul class="breadcrumb">
@@ -416,17 +416,18 @@
 		</div>
 	</div>
   
-	 <!-- footer -->
+
+  <!-- footer -->
   <div class="footer">
     <div class="bg-dark">
       <div class="container py-5">
 
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <h6 class="footer_tittle mb-3">CONTACT INFOMATION</h6>
                   <div class="footer_content text-white">
                     <p>
-                      <i class="fa fa-home mr-3"></i> <a href="">No 8, Ton That Thuyet, Ha Noi</a></p>
+                      <i class="fa fa-home mr-3"></i> <a href="contact.html">No 8, Ton That Thuyet, Ha Noi</a></p>
                     <p>
                       <i class="fa fa-envelope mr-3"></i><a href="">info@example.com</a></p>
                     <p>
@@ -435,12 +436,7 @@
                       <i class="fa fa-print mr-3"></i><a href="">+ 01 234 567 89</a></p>
                   </div>        
           </div>
-
-          <div class="col-md-9">
-            
-            <div class="row">
-              
-              <div class="col-md-4">
+          <div class="col-md-3 col-sm-6">
                 <h6 class="footer_tittle">MY ACCOUNT</h6>
                 <div class="footer_content">
                   <ul>
@@ -450,8 +446,8 @@
                     <li><a href="compare.html">Compare</a></li>
                   </ul>
                 </div>
-              </div>
-              <div class="col-md-4">
+          </div>
+          <div class="col-md-3 col-sm-6">
                 <h6 class="footer_tittle">FPT STATIONARY</h6>
                 <div class="footer_content">
                   <ul>
@@ -461,8 +457,8 @@
                     <li><a href="job.html">Job</a></li>
                   </ul>
                 </div>
-              </div>
-              <div class="col-md-4">
+          </div>
+          <div class="col-md-3 col-sm-6">
                 <h6 class="footer_tittle">CUSTOMER SERVICES</h6>
                 <div class="footer_content">
                   <ul>
@@ -472,8 +468,6 @@
                     <li><a href="#">Online Shopping</a></li>
                   </ul>
                 </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="row">
@@ -485,7 +479,7 @@
                    </div>
                 </div>
               </form>
-            </div>
+        </div>
         
         <hr class="bg-secondary">
         <div class="row text-white">
@@ -508,5 +502,7 @@
     </div>
   </div>
   <!-- footer -->
+
+
 </body>
 </html>
