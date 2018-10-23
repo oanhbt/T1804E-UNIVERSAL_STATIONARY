@@ -121,7 +121,7 @@ function contact()
     } 
 
    
-    alert("");
+    alert("Thanks for contacting us. We will get back to you as soon as possible.");
     return true; 
 }
 
