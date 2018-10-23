@@ -6,7 +6,7 @@ function signup()
    
     if (name.value == "")                                  
     { 
-        window.alert("Please enter your name."); 
+        window.alert("Please enter your name.");
         name.focus(); 
         return false; 
     } 
@@ -43,7 +43,7 @@ function signup()
         window.alert("Please enter your password"); 
         password.focus(); 
         return false; 
-    } 
+    }
 
     alert("Successful Registration");
     return true; 
@@ -156,9 +156,6 @@ function checkOut()
         return false; 
     } 
 
-    if (paymethod.value == "homePay")                           
-    { 
-       
         if (namecard.value == "")                        
         { 
             window.alert("Please enter your namecard"); 
@@ -183,9 +180,7 @@ function checkOut()
             cvv.focus(); 
             return false; 
         } 
-    } 
 
-    alert('doi ty');
     return true; 
 }
 function validateEmail(email) {

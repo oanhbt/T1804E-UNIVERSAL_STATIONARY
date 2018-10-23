@@ -33,7 +33,7 @@
   <!-- Navigation -->
 
     <div class="sticky">
-        <a class="icon-like wish" href="#" title="Add to Wish List" data-toggle="modal" data-target="#myModal-signin"></a>
+        <a class="icon-like wish" href="wishLish.html" title="Add to Wish List"></a>
 
         <a class="icon-cart cart" href="#" data-toggle="modal" data-target="#myModal-cart"></a>
 
@@ -138,13 +138,13 @@
                   <div id="signin" class="container tab-pane active"><br>
                     <form name="form2" onsubmit="return signin()" method="post">
                         <div class="form-group">
-                          <input type="text" class="form-control" id="usr" name="Name" placeholder="Username / Email Address">
+                          <input type="text" class="form-control" name="Name" placeholder="Username / Email Address">
                         </div>
                         <div class="form-group">
-                          <input type="password" class="form-control" id="pwd" name="Password" placeholder="Password">
+                          <input type="password" class="form-control" name="Password" placeholder="Password">
                         </div>
                         <div class="custom-control custom-checkbox mb-3">
-                          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                          <input type="checkbox" class="custom-control-input" name="example1">
                           <label class="custom-control-label" for="customCheck">Remember Me</label>
                         </div>
                         <input type="submit" value="Login" name="Submit" class="btn btn-dark btn-block">
@@ -382,7 +382,7 @@
         </div>
         <div class="col-md-8 order-md-1">
           <h4 class="mb-3">Billing address</h4>
-          <form class="needs-validation" novalidate="" name="formCheckOut" onsubmit="return checkOut()" method="post">
+          <form class="needs-validation" novalidate="" action="success.html" name="formCheckOut" onsubmit="return checkOut()" method="post">
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName">First name</label>
@@ -491,10 +491,6 @@
                 <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
                 <label class="custom-control-label" name="payMethod" for="paypal" onclick="showpayInfo()">Paypal</label>
               </div>
-              <div class="custom-control custom-radio">
-                <input id="homePay" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                <label class="custom-control-label" name="payMethod" for="homePay" onclick="hidepayInfo()">Home Payment</label>
-              </div>
             </div>
             <div id="payInfo">
               <div class="row">
@@ -502,9 +498,6 @@
                   <label for="cc-name">Name on card</label>
                   <input type="text" class="form-control" id="cc-name" name="nameCard" placeholder="" required="">
                   <small class="text-muted">Full name as displayed on card</small>
-                  <div class="invalid-feedback">
-                    Name on card is required
-                  </div>
                 </div>
                 <div class="col-md-6 mb-3">
                   <label for="cc-number">Credit card number</label>
@@ -536,14 +529,6 @@
           </form>
         </div>
       </div>
-    <script type="text/javascript">
-      function hidepayInfo(){
-        document.getElementById('payInfo').style.display = 'none';
-      }
-      function showpayInfo(){
-        document.getElementById('payInfo').style.display = 'block';
-      }
-    </script>
     </div>
 
     <div class="section-brand mt-5">
@@ -640,8 +625,8 @@
                   <ul>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Register</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Compare</a></li>
+                    <li><a href="wishLish.html">Wishlist</a></li>
+                    <li><a href="compare.html">Compare</a></li>
                   </ul>
                 </div>
           </div>
